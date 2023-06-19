@@ -1,0 +1,1294 @@
+<!DOCTYPE html>
+<html lang="en" xmnls:th="http://www.thymeleaf.org" 
+th:fragment="layout(content)">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trang Web Tuyển Sinh Đại Học-Cao Đẳng Đà Nẵng</title>
+  <!-- Thêm thư viện Bootstrap từ trang chủ của Bootstrap -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/js/bootstrap.min.js"></script>
+
+<!-- Thêm thư viện jQuery từ Google CDN -->
+
+<!-- thư viện slide-->
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex">
+  
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+
+  <!--     <link rel="stylesheet" href="assets/css/style.css"> -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+  
+
+<!-- Font Awesome -->
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+  rel="stylesheet"
+/>
+<!-- Google Fonts -->
+<link
+  href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+  rel="stylesheet"
+/>
+<!-- MDB -->
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.1/mdb.min.css"
+  rel="stylesheet"
+/>
+<!-- MDB -->
+<script
+  type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.1/mdb.min.js"
+></script>
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet" />
+  
+  <style>
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+  </style>
+  <script type="text/javascript" src=""></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
+<!-- logo -->
+
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+
+
+<!-- 4.0 -->
+
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+        <a href="/home">
+        <i class="far fa-lightbulb"></i>HOPE</a>
+    </div>
+        <input type="checkbox" id="check">
+        <nav>
+            <ul>
+                <li><a href="/home">Trang Chủ</a></li>
+                <li><a href="/gioithieu-vn">Giới Thiệu</a></li>
+                <li><a href="/daihoc-vn">Đại Học</a></li>
+                <li><a href="/caodang-vn">Cao Đẳng</a></li>
+                <li><a href="/timkiem-vn">Tìm Kiếm</a></li>
+                <li><a href="/tintuyensinh-vn">Tin Tuyển Sinh</a></li>
+                <li><a href="/sukien-vn">Sự Kiện</a></li>
+                <li><a href="/optionlogin">Đăng Nhập</a></li>
+                <li><a href="/home"><img class="quocky" src="https://cdn.duytan.edu.vn/images/icon/vi.png"  alt="VN" /></a>
+                  <a href="/home-uk"><img  class="quocky" src="https://cdn.duytan.edu.vn/images/icon/eng.png" alt="USA" /></a></li>
+            </ul>
+        </nav>
+            <label for="check"><span></span></label>
+</header>
+           
+<!--<div id="home" class="hero-container">
+    <h3>Handcrafted</h3>
+    <h3>Cutting Edge Features</h3>
+    <p>Parallax, Video, Product, Premium Addons and.<br> More...</p>
+    <a href="#">View Works</a>
+</div>-->
+
+  <!-- home -->
+  
+<div th:replace ="${content}">
+  <section class="home" id="home">
+    <div class="slider">
+      <div class="slide active" style="background-image: url('https://images.baoquangnam.vn/Storage/NewsPortal/2023/3/12/139782/BIH06725.JPG')">
+        <div class="container">
+          <div class="caption">
+            <h1 class="tieude" style="color: #ffffff">1.Chương Trình Tư Vấn Tuyến Sinh Trực Tuyến 2023</h1>
+            <p style="color: #ffffff;">Đại Học Đà Nẵng</p>
+            <a href="http://smp.udn.vn/chao-don-chuong-trinh-tu-van-truc-tuyen-tuyen-sinh-dai-hoc-da-nang-nam-2023.html">Xem Chi Tiết</a>
+          </div>
+        </div>
+      </div>
+      <div class="slide" style="background-image: url('https://blog.topcv.vn/wp-content/uploads/2020/08/Dinh-huong-nghe-nghiep-la-gi.jpg')">
+        <div class="container">
+          <div class="caption">
+            <h1 class="tieude" style="color: #ffffff;">2.Tư Vấn</h1>
+            <p style="color: #ffffff;">TOP CV</p>
+            <a href="/thongtin-2">Xem Chi Tiết</a>
+            
+          </div>
+       </div>
+      </div>
+      <div class="slide" style="background-image: url('https://ts.udn.vn/images/pics/2023/20234251412149HD_HB_(3).jpg')">
+      <div class="container">
+          <div class="caption">
+            <h1 class="tieude" style="color: #ffffff;"></h1>
+            <p style="color: #ffffff;"></p>
+            <a href="/thongtin-3">Xem Chi Tiết</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- controls  -->
+    <div class="controls">
+      <div class="prev"><i class="fa fa-2x fa fa-angle-left"></i></div>
+      <div class="next"><i class="fa fa-2x fa fa-angle-right"></i></div>
+    </div>
+
+    <!-- indicators -->
+    <div class="indicator">
+    </div>
+
+  </section>
+          
+<div id="services" class="services-container">
+    <div class="service-header">
+        <h2>Giới Thiệu Nhóm Ngành </h2>
+        <p>Dưới Đây Là Một Số Nhóm Ngành Và Đặc Điểm Của Nhóm Ngành Đó</p>
+    </div>
+          
+    <div class="service-card-container">
+        <div class="service-cards">
+          <i class="fas fa-chalkboard-teacher"></i>
+            <h3>Nhóm Ngành Sư Phạm</h3>
+            <p>Ngành Khoa học giáo dục và Đào tạo giáo viên nghiên cứu về giáo dục và đào tạo giáo viên. Nó tập trung vào cách con người học và phát triển, cách dạy và đánh giá hiệu quả, cũng như việc chuẩn bị và đào tạo giáo viên chuyên nghiệp...</p>
+        </div>
+        <div class="service-cards">
+          <i class="fas fa-laptop"></i>
+            <h3>Nhóm ngành Máy tính và CNTT</h3>
+            <p>Nhóm ngành Máy tính và Công nghệ thông tin tập trung vào việc nghiên cứu, phát triển và ứng dụng các công nghệ liên quan đến máy tính, phần mềm, mạng máy tính và hệ thống thông tin...</p>
+        </div>
+        <div class="service-cards">
+          <i class="fas fa-palette"></i>
+            <h3>Nhóm ngành Năng khiếu nghệ thuật</h3>
+            <p>bao gồm các lĩnh vực như nghệ thuật sân khấu, âm nhạc, hội họa, điêu khắc, văn chương và phim ảnh...</p>
+        </div>
+        <div class="service-cards">
+          <i class="fas fa-flask"></i>
+            <h3>Nhóm ngành Khoa học Nhân văn</h3>
+            <p>Nhóm ngành Khoa học Nhân văn tập trung vào việc nghiên cứu và hiểu về các khía cạnh con người, xã hội và văn hóa. Sinh viên trong ngành này học về lịch sử, triết học, ngôn ngữ, văn hóa, tâm lý học và các phương pháp nghiên cứu xã hội.</p>
+        </div>
+        <div class="service-cards">
+          <i class="fas fa-globe-americas"></i>
+            <h3>Nhóm ngành Khoa học xã hội và hành vi</h3>
+            <p>Nhóm ngành này bao gồm nhiều lĩnh vực như tâm lý học, xã hội học, kinh tế học, chính trị học, antropôlô-gi, luật học, giáo dục học, truyền thông học và nhiều lĩnh vực khác. </p>
+        </div>
+        <div class="service-cards">
+          <i class="far fa-newspaper"></i>
+            <h3>Nhóm ngành Báo chí – Truyền thông</h3>
+            <p>Ngành này bao gồm nhiều lĩnh vực như báo chí, xuất bản, truyền hình, đài phát thanh, quảng cáo, truyền thông kỹ thuật số, và công nghệ thông tin liên quan đến việc truyền tải thông tin và tương tác giữa người và phương tiện truyền thông. </p>
+        </div>
+        <div class="service-cards">
+          <i class="fas fa-business-time"></i>
+          <h3>Nhóm ngành Kinh doanh và Quản lý</h3>
+          <p> Ngành này bao gồm nhiều lĩnh vực như kinh tế, marketing, tài chính, quản lý chiến lược, quản lý nguồn nhân lực, quản lý sản xuất và quản lý dự án.</p>
+      </div>
+      <div class="service-cards">
+        <i class="fas fa-gavel"></i>
+        <h3>Nhóm ngành Pháp luật</h3>
+        <p>Ngành này bao gồm nhiều lĩnh vực như luật dân sự, luật hình sự, luật lao động, luật kinh doanh, luật quốc tế, luật tư pháp và nhiều lĩnh vực khác.</p>
+    </div>
+    </div>
+    <div class="null"></div>
+    <div class="divbutton">
+      <a href="/xemthemnganh-vn"><button class="buttonxemthem">Xem Thêm</button></a>
+    </div>
+    <div class="null"></div>
+
+</div>
+      
+<!--tintuc-->
+<div id="blog" class="blog-container">
+  <div class="blog-header">
+      <h2>Sự Kiện</h2>
+      <p>Những Sự Kiện Đang Và Sắp Diễn Ra</p>                
+  </div>
+
+  <div class="blog-card-container">
+      <div class="blog-card">
+          <div class="blog-card-image">
+              <img src="https://scontent.fdad2-1.fna.fbcdn.net/v/t39.30808-6/346495412_1183224775701536_1999784444338941540_n.jpg?stp=dst-jpg_p960x960&_nc_cat=101&ccb=1-7&_nc_sid=730e14&_nc_ohc=STXRx6RTWzgAX_paZvq&_nc_ht=scontent.fdad2-1.fna&oh=00_AfA7LSDK41ozX2yNwLZQjwLcuAUFWSUgYrjzvYjr4ffrbg&oe=646B1785" alt="">
+          </div>    
+          <div class="blog-card-content">
+              <div class="date">
+                  <p><i class="fas fa-calendar-week"></i> 19/05/2022</p>
+              </div>
+              <a href="/xemthemsukien-vn"><h5>🔥Các đội hãy sẵn sàng chuẩn bị cho vòng sơ loại 1, BWD 2023
+                8h, thứ 7 ngày 03/06/2023.
+                Get's go!🔥</h5></a>
+                  <div class="meta-tags">
+                      <span><i class="far fa-eye"></i> 1.5k views</span>
+                      <span><i class="far fa-comments"></i>  205</span>
+                      <span><i class="fas fa-share"></i> 32</span>
+                  </div>
+          </div>
+      </div>
+        
+      <div class="blog-card">
+          <div class="blog-card-image">
+              <img src="/image/tintuc1.jpg" alt="">
+          </div>    
+          <div class="blog-card-content">
+              <div class="date">
+                  <p><i class="fas fa-calendar-week"></i>19/05/2023</p>
+              </div>
+              <a href="/xemthemsukien-vn"><h5>Cuộc thi hùng biện Ngoại ngữ dành cho học sinh THPT Thành phố Đà Nẵng năm 2023</h5></a>
+                  <div class="meta-tags">
+                      <span><i class="far fa-eye"></i> 900 views</span>
+                      <span><i class="far fa-comments"></i>  26</span>
+                      <span><i class="fas fa-share"></i> 3</span>
+                  </div>
+          </div>
+      </div>
+        
+      <div class="blog-card">
+          <div class="blog-card-image">
+              <img src="https://scontent.fdad1-4.fna.fbcdn.net/v/t39.30808-6/347786777_199922676241922_7184282295442861447_n.jpg?stp=dst-jpg_p600x600&_nc_cat=105&ccb=1-7&_nc_sid=730e14&_nc_ohc=LcQq2xWwP40AX8va_8Y&_nc_ht=scontent.fdad1-4.fna&oh=00_AfBlh4p9AuefWoz2XRnwq2RIeMUNFRrj79HdihozKDmexA&oe=646C1D4E" alt="">
+          </div>    
+          <div class="blog-card-content">
+              <div class="date">
+                  <p><i class="fas fa-calendar-week"></i>18/05/2023</p>
+              </div>
+              <a href="/xemthemsukien-vn"><h5>Chương trình tiếng Việt dành cho người nước ngoài tại Trường Đại học Sư phạm</h5></a>
+                  <div class="meta-tags">
+                      <span><i class="far fa-eye"></i> 2.5k views</span>
+                      <span><i class="far fa-comments"></i>  23</span>
+                      <span><i class="fas fa-share"></i>  15</span>
+                  </div>
+          </div>
+      </div>
+
+      <div class="blog-card">
+        <div class="blog-card-image">
+            <img src="https://butbi.hocmai.vn/wp-content/uploads/2022/06/dang-ky-thi-danh-gia-nang-luc-2023-tphcm-1a.jpg" alt="">
+        </div>    
+        <div class="blog-card-content">
+            <div class="date">
+                <p><i class="fas fa-calendar-week"></i>19/05/2023</p>
+            </div>
+            <a href="/xemthemsukien-vn"><h5 class="card-title">
+              Địa Điểm Diễn Ra Kỳ Thi Đánh Giá Năng Lực Đợt 2-2023
+            </h5></a>
+                <div class="meta-tags">
+                    <span><i class="far fa-eye"></i> 470 views</span>
+                    <span><i class="far fa-comments"></i>  16</span>
+                    <span><i class="fas fa-share"></i> 43</span>
+                </div>
+        </div>
+    </div>
+      
+   
+  </div>
+  <div class="null"></div>
+  <center><button type="button" class="btn btn-primary"><a href="/xemthemsukien-vn">Xem Thêm</a></button></center>
+
+</div>
+
+<!--<div id="features" class="why-container">-->
+    <!--<div class="why-header">
+        <h2>Lối Tắt</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti quia minus quod aliquid.</p>
+    </div>-->
+       <!-- <div class="bg">
+    <div class="why-card-container">
+        <div class="why-cards">
+          <i class="fas fa-file-alt"></i>
+            <div class="why-card-content">
+                <h3>Văn Bản Pháp Quy</h3>
+                <p></p>
+            </div>
+        </div>
+        <div class="why-cards">
+          <i class="fas fa-wrench"></i>
+            <div class="why-card-content">
+                <h3>Hỗ Trợ Trực Tuyến</h3>
+                <p></p>
+            </div>
+        </div>
+
+        <div class="why-cards">
+          <i class="fas fa-calendar-alt"></i>
+          <div class="why-card-content">
+              <h3>Mini Game</h3>
+              <p></p>
+          </div>
+      </div>
+
+      <div class="why-cards">
+        <i class="fas fa-calendar-alt"></i>
+        <div class="why-card-content">
+            <h3>Lịch Sự Kiện</h3>
+            <p></p>
+        </div>
+    </div>
+      
+    </div>
+  </div> -->
+
+
+
+
+
+    <!--     
+<div id="works" class="work-container">
+    <div class="work-header">
+        <h2>Thông Tin Tuyển Sinh</h2>
+        <p>Thông Tin Tuyển Sinh Mới Nhất Của Các Trường Đại Học,Cao Đẳng</p>
+        <div class="work-header-links">
+            <a href="#">Xem Tất Cả</a>
+            <a href="#">Thông Báo Trường Đại Học</a>
+            <a href="#">Thông Báo Trường Cao Đẳng</a>
+        </div>
+    </div>
+<center><h4>Một Số Thông Báo Mới</h4></center>
+    <div class="work-image-container">
+        <div class="work-image-card">
+            <img src="https://scontent.fdad1-2.fna.fbcdn.net/v/t39.30808-6/344222301_6083090165109651_8356910162402259242_n.jpg?stp=dst-jpg_p843x403&_nc_cat=106&ccb=1-7&_nc_sid=730e14&_nc_ohc=stFS0AmiwA0AX-nqswa&_nc_ht=scontent.fdad1-2.fna&oh=00_AfCcAWo3Z-p-31DHIAJHmOLRxIcGW_wj2o9ZLQkDd4WQhA&oe=646B983B" alt="">
+            <div class="image-over-content">
+                <i class="fas fa-search-plus"></i>
+                <p><p style="color: #ffffff; font-size: 25 px;font-weight: bold;">Trường Đại Học Công Nghệ Thông Tin Và Truyền Thông Việt-Hàn</p><p style="color: #ffffff; font-size: 20px;font-weight: bold;">NHẬN HỒ SƠ ĐĂNG KÝ XÉT TUYỂN THEO PHƯƠNG THỨC HỌC BẠ VÀ XÉT ĐIỂM ĐÁNH GIÁ NĂNG LỰC DO ĐHQG TP. HỒ CHÍ MINH TỔ CHỨC NĂM 2023</p>
+            </div>
+        </div>
+        <div class="work-image-card">
+            <img src="https://www.udn.vn/Portals/0/329959270_586592293021134_8053537864320164696_n.png" alt="">
+            <div class="image-over-content">
+                <i class="fas fa-search-plus"></i>
+                <p style="color: #ffffff; font-size: 20px;font-weight: bold;"><p style="color: #ffffff; font-size: 25 px;font-weight: bold;">Trường Đại Học Kinh Tế</p><p style="color: #ffffff; font-size: 20px;font-weight: bold;">Tuyển sinh Đại học Đà Nẵng 2023: Những điểm mới từ các cơ sở đào tạo thành viên (Kỳ 1) - Đại học Đà Nẵng</p>
+                </p>
+            </div>
+        </div>
+        <div class="work-image-card">
+            <img src="https://www.udn.vn/Portals/0/328531585_1372416466827634_1888129170070036310_n.jpg" alt="">
+            <div class="image-over-content">
+                <i class="fas fa-search-plus"></i>
+                <p style="color: #ffffff; font-size: 20px;font-weight: bold;"><p style="color: #ffffff; font-size: 25 px;font-weight: bold;">Viện Nghiên cứu và Đào tạo Việt-Anh</p><p style="color: #ffffff; font-size: 20px;font-weight: bold;">Môi trường hội nhập quốc tế hóa, nhiều chương trình học bổng hấp dẫn  </p>
+            </div>
+        </div>
+        <div class="work-image-card">
+            <img src="https://caodang.fpt.edu.vn/wp-content/uploads/414x450-22.png" alt="">
+            <div class="image-over-content">
+                <i class="fas fa-search-plus"></i>
+                <p>View Project</p>
+            </div>
+        </div>
+        <div class="work-image-card">
+            <img src="https://cep.edu.vn/portals/0/caodangkinhtekehoachdanang/2023/cao%20dang%20kinh%20te%20ke%20hoach%20da%20nang%20tuyen%20sinh%202023.jpg" alt="">
+            <div class="image-over-content">
+                <i class="fas fa-search-plus"></i>
+                <p>View Project</p>
+            </div>
+        </div>
+        <div class="work-image-card">
+            <img src="https://yt3.googleusercontent.com/QR-acxMyVYAMGdbtVTBZyoWhCIkdrfnRkt4MFqMEqe2JELWSy4Uu7nZLYc5pCW0o07MRQcih=s900-c-k-c0x00ffffff-no-rj" alt="">
+            <div class="image-over-content">
+                <i class="fas fa-search-plus"></i>
+                <p>View Project</p>
+            </div>
+        </div>
+    </div>
+</div>-->
+
+  <section class="pt-5 pb-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <h3 class="mb-3">Các Thông Tin Tuyển Sinh Cập Nhật</h3>
+        </div>
+        <div class="col-6 text-right">
+          <a class="btn btn-primary mb-3 mr-1" href="#carouselExampleIndicators2" role="button" data-slide="prev">
+            <i class="fa fa-arrow-left"></i>
+          </a>
+          <a class="btn btn-primary mb-3" href="#carouselExampleIndicators2" role="button" data-slide="next">
+            <i class="fa fa-arrow-right"></i>
+          </a>
+        </div>
+        <div class="col-12">
+          <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row">
+                  <!--      using col-lg-4 instead col-md-4 to force tablet to display in stcked cards instead 3 colums             -->
+                  <div class="col-lg-4 mb-3">
+                    <div class="blog-card">
+                      <img class="img-fluid" alt="100%x280" src="image/tuyensinh1.jpg" />
+                      <div class="card-body">
+                        <h4 class="card-title">
+                          Đại Học Đà Nẵng
+                        </h4>
+                        <p class="card-text">
+                         Tiêu Điểm Tuyển Sinh 2023
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 mb-3">
+                    <div class="blog-card">
+                      <img class="img-fluid" alt="100%x280" src="/image/tuyensinh2.jpg" />
+                      <div class="card-body">
+                        <h4 class="card-title">
+                          Đại Học Bách Khoa Đà Nẵng
+                        </h4>
+                        <p class="card-text">
+                          Thông Tin Tuyển Sinh
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 mb-3">
+                    <div class="blog-card">
+                      <img class="img-fluid" alt="100%x280" src="/image/tuyensinh3.png" />
+                      <div class="card-body">
+                        <h4 class="card-title">
+                          Đại Học CNTT & TT Việt Hàn
+                        </h4>
+                        <p class="card-text">
+                          Đăng Kí Xét Tuyển
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col-lg-4 mb-3">
+                    <div class="blog-card">
+                      <img class="img-fluid" alt="100%x280" src="/image/tuyensinh4.png" />
+                      <div class="card-body">
+                        <h4 class="card-title">
+                          Đại Học Duy Tân
+                        </h4>
+                        <p class="card-text">
+                         Thông Tin Tuyển Sinh
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 mb-3">
+                    <div class="blog-card">
+                      <img class="img-fluid" alt="100%x280" src="/image/tuyensinh5.png" />
+                      <div class="card-body">
+                        <h4 class="card-title">
+                          Đại Học FPT Đà Nẵng
+                        </h4>
+                        <p class="card-text">
+                          Thông Báo Tuyển Sinh
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 mb-3">
+                    <div class="blog-card">
+                      <img class="img-fluid" alt="100%x280" src="/image/tuyensinh6.jpg" />
+                      <div class="card-body">
+                        <h4 class="card-title">
+                          Đại Học Đông Á
+                        </h4>
+                        <p class="card-text">
+                          Công Bố Phương Thức Tuyển Sinh
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col-lg-4 mb-3">
+                    <div class="blog-card">
+                      <img class="img-fluid" alt="100%x280" src="/image/tuyensinh7.jpg" />
+                      <div class="card-body">
+                        <h4 class="card-title">
+                          Cao Đẳng Phương Đông Đà Nẵng
+                        </h4>
+                        <p class="card-text">
+                         Thông Tin Xét Tuyển
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 mb-3">
+                    <div class="blog-card">
+                      <img class="img-fluid" alt="100%x280" src="/image/tuyensinh8.png" />
+                      <div class="card-body">
+                        <h4 class="card-title">
+                          Cao Đẳng Đại Việt
+                        </h4>
+                        <p class="card-text">
+                          Thông Báo Tuyển Sinh
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 mb-3">
+                    <div class="blog-card">
+                      <img class="img-fluid" alt="100%x280" src="/image/tuyensinh9.png" />
+                      <div class="card-body">
+                        <h4 class="card-title">
+                          Cao Đẳng FPT POLYTECHNIC
+                        </h4>
+                        <p class="card-text">
+                          Tuyển Sinh Bổ Sung
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script type="text/javascript"></script>
+
+
+<div id="pricing" class="pricing-container">
+    <div class="pricing-header">
+        <h2>Xem Danh Sách Các Trường</h2>
+        <p></p>
+    </div>
+
+    <div class="pricing-card-container">
+        <div class="pricing-card">
+            <div class="plan-price">
+                <h3>Tư Thục</h3>
+                <!--<p>49$<span>/mo</span></p>-->
+            </div>
+            <ul>
+                <li>Không Thuộc Sự Quản Lí Của Nhà Nước</li>
+                <li>Đa Dạng Hình Thức Xét Tuyển</li>
+                <li>Điểm Chuẩn Dao Động Từ 15đ-23đ</li>
+                <li>Học Phí Dao Động Từ 12 đến 40 Triệu 1 Kỳ</li>
+                <li>Đảm Bảo Sinh Viên Ra Trường Có Việc Làm</li>
+                
+                <li><a href="/daihoc-tuthuc">Xem Danh Sách</a></li>
+            </ul>
+        </div>
+    
+        <div class="pricing-card">
+            <div class="plan-price">
+                <h3>Công Lập</h3>
+                <!--<p>99$<span>/mo</span></p>-->
+            </div>
+            <ul>
+                <li>Quản Lí Bởi Nhà Nước</li>
+                <li>Học Phí Do Nhà Nước Quy Định</li>
+                <li>Điểm Chuẩn Từ 16đ-27đ</li>
+                <li>Nhiều CHương Trình Hợp Tác Doanh Nghiệp</li>
+                <li>Đa Dạng Các Hình Thức Xét Tuyển</li>
+                <li><a href="/daihoc-conglap">Xem Danh Sách</a></li>
+            </ul>
+        </div>
+    
+        <div class="pricing-card">
+            <div class="plan-price">
+                <h3>Cao Đẳng</h3>
+                <!--<p>199$<span>/mo</span></p>-->
+            </div>
+            <ul>
+                <li>Gồm Trường Công Lập Và Tư Thục</li>
+                <li>Học Phí Dao Động Từ 15-30 Triệu 1 Kỳ</li>
+                <li>Đa Dạng Hình Thức Xét Tuyển</li>
+                <li>Điểm Chuẩn Thấp</li>
+                <li>Học 2 đến 3 Năm có Thể Tốt Nghiệp</li>
+                <li><a href="/caodang">Xem Danh Sách</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+          
+<div class="stats-container">
+    <div class="stat-card">
+      <i class="fas fa-university"></i>
+        <h1>7 Đơn Vị</h1>
+        <p>Công Lập</center></p>
+    </div>
+    <div class="stat-card">
+      <i class="fas fa-school"></i>
+        <h1>10 Đơn Vị</h1>
+        <p>Tư Thục</p>
+    </div>
+    <div class="stat-card">
+      <i class="fas fa-graduation-cap"></i>
+        <h1>18</h1>
+        <p>Trường Cao Đẳng</p>
+    </div>
+    <div class="stat-card">
+        <i class="far fa-heart"></i>
+        <h1>1689</h1>
+        <p>Lượt Truy Cập Trang Web</p>
+    </div>
+</div> 
+
+
+
+           
+<div id="subscribe" class="subscribe-container">
+    <div class="newsletter">
+        <h3>Nhận Thông Báo Tuyển Sinh</h3>
+        <!--<p>Thông Báo Sẽ Được Gửi Đến Bạn Nhanh Nhất Có Thể-->
+            <form action="">
+                <input type="text" placeholder="Họ Tên">
+                <input type="number" placeholder="Số Điện Thoại hoặc Email">
+                <input type="email" placeholder="Nhập Mã Ngành Bạn Muốn Học">
+            </form>
+        <a href="#">Đăng Kí</a>
+    </div>
+
+    <div class="sub-card-container">
+        <div class="sub-card-content">
+            <i class="fas fa-bullhorn"></i>
+            <div class="sub-card">
+                <h5>Thông Báo</h5>
+                <p>Nhận Thông Báo Bằng Gmail Hoặc Cuộc Gọi Từ Ban Tuyển Sinh Của Các Đơn Vị</p>
+            </div>
+        </div>
+        <div class="sub-card-content">
+          <i class="fas fa-users-cog"></i>
+            <div class="sub-card">
+                <h5>Hỗ Trợ Và Tư Vấn</h5>
+                <p>Nhận Được Sự Hỗ Trợ Đầy Đủ Khi Có Thắc Mắc Cần Giải Đáp</p>
+            </div>
+        </div>
+        <div class="sub-card-content">
+            <i class="fas fa-clock"></i>
+            <div class="sub-card">
+                <h5>98% Kiếm Được Nguyện Vọng Như Ý</h5>
+                <p>Có Nhiều Sự Lựa Chọn Từ Các Gợi Ý Đề Xuất CủaCác Đại Học/Trường/viện/Cao Đẳng</p>
+            </div>
+        </div>
+    </div>            
+</div>
+</div>
+ 
+  <!-- Footer -->
+<footer class="text-center text-lg-start bg-light text-muted">
+  <!-- Section: Social media -->
+  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+    <!-- Left -->
+    
+    <!-- Left -->
+
+    <!-- Right -->
+    <div>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <!--<a href="" class="me-4 text-reset">
+        <i class="fab fa-twitter"></i>
+      </a>-->
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-google"></i>
+      </a>
+      <!--<a href="" class="me-4 text-reset">
+        <i class="fab fa-instagram"></i>
+      </a> 
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-github"></i>
+      </a>-->
+    </div>
+    <!-- Right -->
+  </section>
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            <i class="fas fa-user-graduate"></i>STAR OF HOPE
+          </h6>
+          <p>
+            &ldquo;Hãy cùng chúng tôi khám phá, nắm bắt và định hình tương lai của bạn. Đăng ký ngay để trở thành một phần của cộng đồng học thuật đầy năng lượng và sáng tạo. Chúng tôi mong muốn được hỗ trợ bạn trên hành trình tuyển sinh và chúc bạn thành công trong cuộc sống học tập sắp tới.&rdquo;
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Tổng Quan
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Giới Thiệu</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Công Lập</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Tư Thục</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Cao Đẳng</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Nội Dung
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Tin Tuyển Sinh</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Tìm Kiếm</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Sự Kiện</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Đăng Nhập</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">Liên Hệ</h6>
+          <p><i class="fas fa-map-marked-alt"></i> 430,Đường Trần Đại Nghĩa,<br>&emsp;&nbsp;Hòa Quý,Ngũ Hành Sơn,TP.Đà Nẵng</p>
+          <p>
+            <i class="fas fa-envelope me-3"></i>
+            Nhatdc.22it@vku.udn.vn
+          </p>
+          <p><i class="fas fa-phone me-3"></i> 0972 &nbsp;087 &nbsp;664</p>
+          <p><i class="fas fa-print me-3"></i> 0816 &nbsp;162 &nbsp;806</p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+    © 2023 Bản Quyền Thuộc Về:
+    <a class="text-reset fw-bold" href="https://mdbootstrap.com/">STAR OF HOPE</a>
+  </div>
+  
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->        
+          
+
+</body>
+<script>
+  
+
+// home
+
+const slides = document.querySelector(".slider").children;
+const prev = document.querySelector(".prev");
+const next = document.querySelector(".next");
+const indicator = document.querySelector(".indicator");
+let index = 0;
+
+prev.addEventListener("click", function () {
+  prevSlide();
+  updateCircleIndicator();
+  resetTimer();
+});
+
+next.addEventListener("click", function () {
+  nextSlide();
+  updateCircleIndicator();
+  resetTimer();
+});
+
+// create circle indicators
+function circleIndicator() {
+  for (let i = 0; i < slides.length; i++) {
+    const div = document.createElement("div");
+    div.innerHTML = i + 1;
+    div.setAttribute("onclick", "indicateSlide(this)");
+    div.id = i;
+    if (i == 0) {
+      div.className = "active";
+    }
+    indicator.appendChild(div);
+  }
+}
+circleIndicator();
+
+function indicateSlide(element) {
+  index = element.id;
+  changeSlide();
+  updateCircleIndicator();
+  resetTimer();
+}
+
+function updateCircleIndicator() {
+  for (let i = 0; i < indicator.children.length; i++) {
+    indicator.children[i].classList.remove("active");
+  }
+  indicator.children[index].classList.add("active");
+}
+
+function prevSlide() {
+  if (index == 0) {
+    index = slides.length - 1;
+  } else {
+    index--;
+  }
+  changeSlide();
+}
+
+function nextSlide() {
+  if (index == slides.length - 1) {
+    index = 0;
+  } else {
+    index++;
+  }
+  changeSlide();
+}
+
+function changeSlide() {
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].classList.remove("active");
+  }
+
+  slides[index].classList.add("active");
+}
+
+function resetTimer() {
+  // when click to indicator or controls button
+  // stop timer
+  clearInterval(timer);
+  // then started again timer
+  timer = setInterval(autoPlay, 4000);
+}
+
+function autoPlay() {
+  nextSlide();
+  updateCircleIndicator();
+}
+
+let timer = setInterval(autoPlay, 4000);
+
+//  Services
+
+const controls = document.querySelector(".content");
+const container = document.querySelector(".thumbnail-container");
+const allBox = container.children;
+const containerWidth = container.offsetWidth;
+const margin = 30;
+var items = 0;
+var totalItems = 0;
+var jumpSlideWidth = 0;
+
+// item setup per slide
+
+responsive = [
+  { breakPoint: { width: 0, item: 1 } }, //if width greater than 0 (1 item will show)
+  { breakPoint: { width: 600, item: 2 } }, //if width greater than 600 (2  item will show)
+  { breakPoint: { width: 1000, item: 4 } } //if width greater than 1000 (4 item will show)
+];
+
+function load() {
+  for (let i = 0; i < responsive.length; i++) {
+    if (window.innerWidth > responsive[i].breakPoint.width) {
+      items = responsive[i].breakPoint.item;
+    }
+  }
+  start();
+}
+
+function start() {
+  var totalItemsWidth = 0;
+  for (let i = 0; i < allBox.length; i++) {
+    // width and margin setup of items
+    allBox[i].style.width = containerWidth / items - margin + "px";
+    allBox[i].style.margin = margin / 2 + "px";
+    totalItemsWidth += containerWidth / items;
+    totalItems++;
+  }
+
+  // thumbnail-container width set up
+  container.style.width = totalItemsWidth + "px";
+
+  // slides controls number set up
+  const allSlides = Math.ceil(totalItems / items);
+  const ul = document.createElement("ul");
+  for (let i = 1; i <= allSlides; i++) {
+    const li = document.createElement("li");
+    li.id = i;
+    li.innerHTML = i;
+    li.setAttribute("onclick", "controlSlides(this)");
+    ul.appendChild(li);
+    if (i == 1) {
+      li.className = "active";
+    }
+  }
+  controls.appendChild(ul);
+}
+
+// when click on numbers slide to next slide
+function controlSlides(ele) {
+  // select controls children  'ul' element
+  const ul = controls.children;
+
+  // select ul children 'li' elements;
+  const li = ul[0].children;
+
+  var active;
+
+  for (let i = 0; i < li.length; i++) {
+    if (li[i].className == "active") {
+      // find who is now active
+      active = i;
+      // remove active class from all 'li' elements
+      li[i].className = "";
+    }
+  }
+  // add active class to current slide
+  ele.className = "active";
+
+  var numb = ele.id - 1 - active;
+  jumpSlideWidth = jumpSlideWidth + containerWidth * numb;
+  container.style.marginLeft = -jumpSlideWidth + "px";
+}
+
+window.onload = load();
+
+</script>
+<!-- load layout-->
+<script type="text/javascript">
+  $(document).ready(function () {
+      $("img.lazy").lazy();
+  });
+
+</script>
+
+<!-- tìm kiếm  -->
+<script >
+$(document).ready(function(){
+	  // convert selects already on the page at dom load
+	  $('select.form-control').combobox();	
+	    
+	  $('#it').click(function(e){
+	    $('ul.dropdown-menu').toggle();
+	  });
+	  
+	//  $('input').focus(function(e){
+//	    $('ul.dropdown-menu').toggle();
+	//  });
+	  
+	});
+</script>
+
+<!-- client -->
+<script >
+$(document).ready(function(){
+    $('.customer-logos').slick({
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1500,
+        arrows: false,
+        dots: false,
+        pauseOnHover: false,
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 4
+            }
+        }, {
+            breakpoint: 520,
+            settings: {
+                slidesToShow: 3
+            }
+        }]
+    });
+});
+</script>
+
+<!-- search -->
+<script>
+console.clear()
+
+const data = [
+  'Trường ĐH Bách khoa Đà Nẵng',
+  'Trường ĐH Sư phạm Đà Nẵng',
+  'Trường ĐH Ngoại ngữ Đà Nẵng',
+  'Trường ĐH Kinh tế Đà Nẵng',
+  'Trường ĐH Kỹ thuật Y dược Đà Nẵng',
+  'Trường ĐH Thể dục thể thao Đà Nẵng',
+  'Đại học Sư phạm Kỹ thuật Đà Nẵng',
+  'Trường Đại học Công nghệ Thông tin và Truyền thông Việt – Hàn',
+  'Khoa Y- ĐH Đà Nẵng',
+  'Viện Nghiên cứu đào tạo Việt Anh-ĐH Đà Nẵng',
+  'Trường ĐH Duy Tân',
+  'Trường ĐH Kiến trúc Đà Nẵng',
+  'Trường ĐH Đông Á',
+  'Phân hiệu ĐH Xây dựng miền Trung tại Đà Nẵng',
+  'Phân hiệu ĐH FPT Đà Nẵng'
+];
+
+
+class Autocomplete {
+  constructor({
+    rootNode,
+    inputNode,
+    resultsNode,
+    searchFn,
+    shouldAutoSelect = false,
+    onShow = () => {},
+    onHide = () => {}
+  } = {}) {
+    this.rootNode = rootNode
+    this.inputNode = inputNode
+    this.resultsNode = resultsNode
+    this.searchFn = searchFn
+    this.shouldAutoSelect = shouldAutoSelect
+    this.onShow = onShow
+    this.onHide = onHide
+    this.activeIndex = -1
+    this.resultsCount = 0
+    this.showResults = false
+    this.hasInlineAutocomplete = this.inputNode.getAttribute('aria-autocomplete') === 'both'
+
+    // Setup events
+    document.body.addEventListener('click', this.handleDocumentClick)
+    this.inputNode.addEventListener('keyup', this.handleKeyup)
+    this.inputNode.addEventListener('keydown', this.handleKeydown)
+    this.inputNode.addEventListener('focus', this.handleFocus)
+    this.resultsNode.addEventListener('click', this.handleResultClick)
+  }
+  
+  handleDocumentClick = event => {
+    if (event.target === this.inputNode || this.rootNode.contains(event.target)) {
+      return
+    }
+    this.hideResults()
+  }
+
+  handleKeyup = event => {
+    const { key } = event
+
+    switch (key) {
+      case 'ArrowUp':
+      case 'ArrowDown':
+      case 'Escape':
+      case 'Enter':
+        event.preventDefault()
+        return
+      default:
+        this.updateResults()
+    }
+    
+    if (this.hasInlineAutocomplete) {
+      switch(key) {
+        case 'Backspace':
+          return
+        default:
+          this.autocompleteItem()
+      }
+    }
+  }
+  
+  handleKeydown = event => {
+    const { key } = event
+    let activeIndex = this.activeIndex
+    
+    if (key === 'Escape') {
+      this.hideResults()
+      this.inputNode.value = ''
+      return
+    }
+    
+    if (this.resultsCount < 1) {
+      if (this.hasInlineAutocomplete && (key === 'ArrowDown' || key === 'ArrowUp')) {
+        this.updateResults()
+      } else {
+        return
+      }
+    }
+    
+    const prevActive = this.getItemAt(activeIndex)
+    let activeItem
+    
+    switch(key) {
+      case 'ArrowUp':
+        if (activeIndex <= 0) {
+          activeIndex = this.resultsCount - 1
+        } else {
+          activeIndex -= 1
+        }
+        break
+      case 'ArrowDown':
+        if (activeIndex === -1 || activeIndex >= this.resultsCount - 1) {
+          activeIndex = 0
+        } else {
+          activeIndex += 1
+        }
+        break
+      case 'Enter':
+        activeItem = this.getItemAt(activeIndex)
+        this.selectItem(activeItem)
+        return
+      case 'Tab':
+        this.checkSelection()
+        this.hideResults()
+        return
+      default:
+        return
+    }
+    
+    event.preventDefault()
+    activeItem = this.getItemAt(activeIndex)
+    this.activeIndex = activeIndex
+    
+    if (prevActive) {
+      prevActive.classList.remove('selected')
+      prevActive.setAttribute('aria-selected', 'false')
+    }
+    
+    if (activeItem) {
+      this.inputNode.setAttribute('aria-activedescendant', `autocomplete-result-${activeIndex}`)
+      activeItem.classList.add('selected')
+      activeItem.setAttribute('aria-selected', 'true')
+      if (this.hasInlineAutocomplete) {
+        this.inputNode.value = activeItem.innerText
+      }
+    } else {
+      this.inputNode.setAttribute('aria-activedescendant', '')
+    }
+  }
+  
+  handleFocus = event => {
+    this.updateResults()
+  }
+  
+  handleResultClick = event => {
+    if (event.target && event.target.nodeName === 'LI') {
+      this.selectItem(event.target)
+    }
+  }
+  
+  getItemAt = index => {
+    return this.resultsNode.querySelector(`#autocomplete-result-${index}`)
+  }
+  
+  selectItem = node => {
+    if (node) {
+      this.inputNode.value = node.innerText
+      this.hideResults()
+    }
+  }
+  
+  checkSelection = () => {
+    if (this.activeIndex < 0) {
+      return
+    }
+    const activeItem = this.getItemAt(this.activeIndex)
+    this.selectItem(activeItem)
+  }
+  
+  autocompleteItem = event => {
+    const autocompletedItem = this.resultsNode.querySelector('.selected')
+    const input = this.inputNode.value
+    if (!autocompletedItem || !input) {
+      return
+    }
+    
+    const autocomplete = autocompletedItem.innerText
+    if (input !== autocomplete) {
+      this.inputNode.value = autocomplete
+      this.inputNode.setSelectionRange(input.length, autocomplete.length)
+    }
+  }
+  
+  updateResults = () => {
+    const input = this.inputNode.value
+    const results = this.searchFn(input)
+    
+    this.hideResults()
+    if (results.length === 0) {
+      return
+    }
+    
+    this.resultsNode.innerHTML = results.map((result, index) => {
+      const isSelected = this.shouldAutoSelect && index === 0
+      if (isSelected) {
+        this.activeIndex = 0
+      }
+      return `
+        <li
+          id='autocomplete-result-${index}'
+          class='autocomplete-result${isSelected ? ' selected' : ''}'
+          role='option'
+          ${isSelected ? "aria-selected='true'" : ''}
+        >
+          ${result}
+        </li>
+      `
+    }).join('')
+    
+    this.resultsNode.classList.remove('hidden')
+    this.rootNode.setAttribute('aria-expanded', true)
+    this.resultsCount = results.length
+    this.shown = true
+    this.onShow()
+  }
+  
+  hideResults = () => {
+    this.shown = false
+    this.activeIndex = -1
+    this.resultsNode.innerHTML = ''
+    this.resultsNode.classList.add('hidden')
+    this.rootNode.setAttribute('aria-expanded', 'false')
+    this.resultsCount = 0
+    this.inputNode.setAttribute('aria-activedescendant', '')
+    this.onHide()
+  }
+}
+
+const search = input => {
+  if (input.length < 1) {
+    return []
+  }
+  return data.filter(item => item.toLowerCase().startsWith(input.toLowerCase()))
+}
+
+const autocomplete = new Autocomplete({
+  rootNode: document.querySelector('.autocomplete'),
+  inputNode: document.querySelector('.autocomplete-input'),
+  resultsNode: document.querySelector('.autocomplete-results'),
+  searchFn: search,
+  shouldAutoSelect: true
+})
+
+document.querySelector('form').addEventListener('submit', (event) => {
+  event.preventDefault()
+  const result = document.querySelector('.search-result')
+  const input = document.querySelector('.autocomplete-input')
+  result.innerHTML = 'Searched for: ' + input.value
+})
+
+</script>
+
+<script>
+
+</script>
+</html>

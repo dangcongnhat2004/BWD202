@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en" xmnls:th="http://www.thymeleaf.org" 
+th:replace="layouts/main-layout::layout(~{::div})">
+<head>
+
+</head>
+<body>
+<div>
+<br><br><br>
+<main>
+  <div class='container'>
+    <form class='autocomplete-container'>
+      <div
+        class='autocomplete'
+        role='combobox'
+        aria-expanded='false'
+        aria-owns='autocomplete-results'
+        aria-haspopup='listbox'
+      >
+        <input
+          class='autocomplete-input'
+          placeholder='Tìm Kiếm Trường (VD:Bạn Muốn Tìm Trường Đại Học A Thì Nhập:Trường Đại Học A ghi hoa chữ cái đầu! )'
+          aria-label='Search for a fruit or vegetable'
+          aria-autocomplete='both'
+          aria-controls='autocomplete-results'
+        >
+        <button type='submit' class='autocomplete-submit' aria-label='Search'>
+          <svg aria-hidden='true' viewBox='0 0 24 24'>
+            <path d='M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z' />
+          </svg>
+        </button>
+      </div>
+      <ul
+        id='autocomplete-results'
+        class='autocomplete-results hidden'
+        role='listbox'
+        aria-label='Search for a fruit or vegetable'
+      >
+      </ul>
+    </form>
+    <p class='search-result'></p>
+  </div>
+</main>
+
+
+<center><h1>Danh Các Trường Cao Đẳng Tại Đà Nẵng</h1></center>
+<center><hr  width="30%" align="center" /></center>
+<div class="content-wrapper">
+  
+  <div class="news-card">
+    <a href="#" class="news-card__card-link"></a>
+    <img src="https://reviewedu.net/wp-content/uploads/2021/10/logo.png" alt="" class="news-card__image">
+    <div class="news-card__text-wrapper">
+      <h4 class="news-card__title">Cao đẳng Bách khoa Đà Nẵng</h4>
+      <!--<div class="news-card__post-name">Tag Body</div>-->
+      <div class="news-card__details-wrapper">
+        <!--<p class="news-card__excerpt">Tag Body&hellip;</p>  -->
+        <a href="#" class="news-card__read-more">Xem Chi Tiết <i class="fas fa-long-arrow-alt-right"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="news-card">
+    <a href="#" class="news-card__card-link"></a>
+    <img src="https://ckt.edu.vn/wp-content/uploads/2020/03/bonongnghiep-300x300.png" alt="" class="news-card__image">
+    <div class="news-card__text-wrapper">
+      <h4 class="news-card__title">Cao đẳng CNKT và TLMT</h4>
+      <!--  <div class="news-card__post-name">Tag Body</div>-->
+      <div class="news-card__details-wrapper">
+        <!--  <p class="news-card__excerpt">Tag Body&hellip;</p>-->
+        <a href="#" class="news-card__read-more">Xem Chi Tiết<i class="fas fa-long-arrow-alt-right"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="news-card">
+    <a href="#" class="news-card__card-link"></a>
+    <img src="https://scontent.fdad3-6.fna.fbcdn.net/v/t39.30808-6/299913756_208735821481055_1428623004566654337_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=X9uay4ZksnIAX-1Gcbj&_nc_ht=scontent.fdad3-6.fna&oh=00_AfCddXD1UrK9RAl-ccuKiSlQE4kNVbzwfah7ncztlmzYeQ&oe=6479F271" alt="" class="news-card__image">
+    <div class="news-card__text-wrapper">
+      <h4 class="news-card__title">Cao đẳng Công nghệ Thông tin</h4>
+      <!-- <div class="news-card__post-name">Tag Body</div> -->
+      <div class="news-card__details-wrapper">
+        <!-- <p class="news-card__excerpt">Tag Body&hellip;</p> -->
+        <a href="#" class="news-card__read-more">Xem Chi Tiết<i class="fas fa-long-arrow-alt-right"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="news-card">
+    <a href="#" class="news-card__card-link"></a>
+    <img src="https://scontent.fdad3-6.fna.fbcdn.net/v/t1.18169-9/19247665_1462734700476462_2416906062197253234_n.png?_nc_cat=104&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=Lb1a6gRjv-AAX__CDby&_nc_ht=scontent.fdad3-6.fna&oh=00_AfCzsu7DP_BhvjydErlCSpjorV_b38SkxpV-EevCc-SBbQ&oe=649C92E0" alt="" class="news-card__image">
+    <div class="news-card__text-wrapper">
+      <h4 class="news-card__title">Cao đẳng Du lịch Đà Nẵng</h4>
+      <!--  <div class="news-card__post-name">Tag Body</div>-->
+      <div class="news-card__details-wrapper">
+        <!--  <p class="news-card__excerpt">Tag Body</p>-->
+        <a href="#" class="news-card__read-more">Xem Chi Tiết<i class="fas fa-long-arrow-alt-right"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="news-card">
+    <a href="#" class="news-card__card-link"></a>
+    <img src="https://cdn.haitrieu.com/wp-content/uploads/2022/12/Logo-Truong-Cao-dang-Giao-thong-van-tai-Trung-uong-V.png" class="news-card__image">
+    <div class="news-card__text-wrapper">
+      <h4 class="news-card__title">Cao đẳng GTVT Trung ương V</h4>
+      <!--<div class="news-card__post-name">Tag Body</div>  -->
+      <div class="news-card__details-wrapper">
+       <!-- <p class="news-card__excerpt">Tag Body&hellip;</p> --> 
+        <a href="#" class="news-card__read-more">Xem Chi Tiết <i class="fas fa-long-arrow-alt-right"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="news-card">
+    <a href="#" class="news-card__card-link"></a>
+    <img src="https://scontent.fdad3-4.fna.fbcdn.net/v/t39.30808-6/270247226_4720171441405599_3168911167846332015_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=YKPov-rvWOMAX90th7S&_nc_ht=scontent.fdad3-4.fna&oh=00_AfCaxa6MHLfOXTVQP634x4junWyxu3N7cGkjofUQC0mziQ&oe=647909F5" alt="" class="news-card__image">
+    <div class="news-card__text-wrapper">
+      <h4 class="news-card__title">Cao đẳng Hoa Sen </h4>
+      <!--  <div class="news-card__post-name">Tag Body</div>-->
+      <div class="news-card__details-wrapper">
+       <!-- <p class="news-card__excerpt">Tag Body</p>-->
+        <a href="#" class="news-card__read-more">Xem Chi Tiết<i class="fas fa-long-arrow-alt-right"></i></a>
+      </div>
+    </div>
+  </div>
+
+<div class="news-card">
+    <a href="#" class="news-card__card-link"></a>
+    <img src="https://reviewedu.net/wp-content/uploads/2021/09/152344956_5041059669300226_7621181140962628574_n.jpg" alt="" class="news-card__image">
+    <div class="news-card__text-wrapper">
+      <h4 class="news-card__title">	Cao đẳng Kinh tế - Kế hoạch </h4>
+     <!--  <div class="news-card__post-name">Tag Body</div>-->
+      <div class="news-card__details-wrapper">
+        <!--  <p class="news-card__excerpt">Tag Body&hellip;</p>-->
+        <a href="#" class="news-card__read-more">Xem Tất Cả<i class="fas fa-long-arrow-alt-right"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="news-card">
+    <a href="#" class="news-card__card-link"></a>
+    <img src="https://scontent.fdad3-6.fna.fbcdn.net/v/t39.30808-6/326219191_727364968735622_3995232655038803339_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=MBpWaNVBqQgAX9HDnYo&_nc_ht=scontent.fdad3-6.fna&oh=00_AfBLi1hMpnC76DE69KPkH91mc6KodPysOu-eYgE7ldXiVg&oe=647922B3" alt="" class="news-card__image">
+    <div class="news-card__text-wrapper">
+      <h4 class="news-card__title">Cao đẳng Lạc Việt</h4>
+     <!--  <div class="news-card__post-name">Tag Body</div>-->
+      <div class="news-card__details-wrapper">
+        <!--  <p class="news-card__excerpt">Tag Body&hellip;</p>-->
+        <a href="#" class="news-card__read-more">Xem Tất Cả<i class="fas fa-long-arrow-alt-right"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="news-card">
+    <a href="#" class="news-card__card-link"></a>
+    <img src="https://cfi.edu.vn/user-upload/imgs/logo.png" alt="" class="news-card__image">
+    <div class="news-card__text-wrapper">
+      <h4 class="news-card__title">CĐ Lương Thực Thực Phẩm</h4>
+      <!-- <div class="news-card__post-name">Tag Body</div> -->
+      <div class="news-card__details-wrapper">
+       <!--<p class="news-card__excerpt">Tag Body&hellip;</p> -->
+        <a href="#" class="news-card__read-more">Xem Chi Tiết <i class="fas fa-long-arrow-alt-right"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="news-card">
+    <a href="#" class="news-card__card-link"></a>
+    <img src="https://scontent.fdad3-1.fna.fbcdn.net/v/t39.30808-6/327713088_1358756038291188_498161427253898298_n.png?_nc_cat=110&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=39OFUFL7ytkAX8O3hpW&_nc_ht=scontent.fdad3-1.fna&oh=00_AfCfxu1B6nX1-R9S6X1S2rGRaaJ4NQ6urpA_zjRBSZQpYw&oe=64794BE5" alt="" class="news-card__image">
+    <div class="news-card__text-wrapper">
+      <h4 class="news-card__title">Cao đẳng nghề Việt - Úc</h4>
+      <!--<div class="news-card__post-name">Tag Body</div>-->
+      <div class="news-card__details-wrapper">
+        <!--<p class="news-card__excerpt">Tag Body&hellip;</p>  -->
+        <a href="#" class="news-card__read-more">Xem Chi Tiết <i class="fas fa-long-arrow-alt-right"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="news-card">
+    <a href="#" class="news-card__card-link"></a>
+    <img src="https://scontent.fdad3-4.fna.fbcdn.net/v/t39.30808-6/305497754_455992866566744_1060559661020693528_n.png?_nc_cat=107&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=a7bi-VAe2uAAX9iYVlo&_nc_ht=scontent.fdad3-4.fna&oh=00_AfBH6x7QOmhTGSnlsEG85UpbtpnEr74SPg375QpKt9MKBA&oe=64797C04" alt="" class="news-card__image">
+    <div class="news-card__text-wrapper">
+      <h4 class="news-card__title">	Cao đẳng nghề Đà Nẵng</h4>
+      <!--  <div class="news-card__post-name">Tag Body</div>-->
+      <div class="news-card__details-wrapper">
+        <!--  <p class="news-card__excerpt">Tag Body&hellip;</p>-->
+        <a href="#" class="news-card__read-more">Xem Chi Tiết<i class="fas fa-long-arrow-alt-right"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="news-card">
+    <a href="#" class="news-card__card-link"></a>
+    <img src="https://scontent.fdad3-6.fna.fbcdn.net/v/t39.30808-6/311279582_418653860471899_4061056911364709097_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=6d0hb9-sLdkAX9t6sDj&_nc_ht=scontent.fdad3-6.fna&oh=00_AfAFPPUT84lrM4R96SXqTSD07DM7tAxzMmbRgNPYbsPYxw&oe=6479DAA5" alt="" class="news-card__image">
+    <div class="news-card__text-wrapper">
+      <h4 class="news-card__title">Cao đẳng Nguyễn Văn Trỗi</h4>
+      <!-- <div class="news-card__post-name">Tag Body</div> -->
+      <div class="news-card__details-wrapper">
+        <!-- <p class="news-card__excerpt">Tag Body&hellip;</p> -->
+        <a href="#" class="news-card__read-more">Xem Chi Tiết<i class="fas fa-long-arrow-alt-right"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="news-card">
+    <a href="#" class="news-card__card-link"></a>
+    <img src="https://scontent.fdad3-4.fna.fbcdn.net/v/t39.30808-6/299435322_147488171298852_6495204415551525194_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=lS7FAwbzZbMAX-uOAHu&_nc_ht=scontent.fdad3-4.fna&oh=00_AfBRGjA0AbAooxWt6Hju3si4cdcZKIqehBG5z-hZ2eIJ1A&oe=6479ECB8" alt="" class="news-card__image">
+    <div class="news-card__text-wrapper">
+      <h4 class="news-card__title">Cao đẳng Phương Đông Đà Nẵng</h4>
+      <!--  <div class="news-card__post-name">Tag Body</div>-->
+      <div class="news-card__details-wrapper">
+        <!--  <p class="news-card__excerpt">Tag Body</p>-->
+        <a href="#" class="news-card__read-more">Xem Chi Tiết<i class="fas fa-long-arrow-alt-right"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="news-card">
+    <a href="#" class="news-card__card-link"></a>
+    <img src="https://reviewedu.net/wp-content/uploads/2021/10/Cao-dang-quoc-te-btec-fpt-4.jpg" alt="" class="news-card__image">
+    <div class="news-card__text-wrapper">
+      <h4 class="news-card__title">Cao đẳng Quốc tế BTEC FPT</h4>
+      <!--<div class="news-card__post-name">Tag Body</div>  -->
+      <div class="news-card__details-wrapper">
+       <!-- <p class="news-card__excerpt">Tag Body&hellip;</p> --> 
+        <a href="#" class="news-card__read-more">Xem Chi Tiết <i class="fas fa-long-arrow-alt-right"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="news-card">
+    <a href="#" class="news-card__card-link"></a>
+    <img src="https://scontent.fdad3-4.fna.fbcdn.net/v/t39.30808-6/348424764_916556716222569_6623368743757776323_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=n61clNcByxAAX-Owx_F&_nc_ht=scontent.fdad3-4.fna&oh=00_AfCrQGOOcLeRpm3HLmWY49sunqWglgVLu7ZQabthhdQj-g&oe=647AA0BA" alt="" class="news-card__image">
+    <div class="news-card__text-wrapper">
+      <h4 class="news-card__title">Cao đẳng Quốc tế Pegasus</h4>
+      <!--  <div class="news-card__post-name">Tag Body</div>-->
+      <div class="news-card__details-wrapper">
+       <!-- <p class="news-card__excerpt">Tag Body</p>-->
+        <a href="#" class="news-card__read-more">Xem Chi Tiết<i class="fas fa-long-arrow-alt-right"></i></a>
+      </div>
+    </div>
+  </div>
+
+<div class="news-card">
+    <a href="#" class="news-card__card-link"></a>
+    <img src="https://scontent.fdad3-5.fna.fbcdn.net/v/t1.6435-9/94404272_1384846191702727_19658353076600832_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=GqOkev54smgAX-vaQ0y&_nc_ht=scontent.fdad3-5.fna&oh=00_AfBmwYdFCigC-FAtBTnPDrFXYSiqsqrOw_SobrrczVUOaw&oe=649C9472" alt="" class="news-card__image">
+    <div class="news-card__text-wrapper">
+      <h4 class="news-card__title">Cao đẳng Thương mại</h4>
+      <!--  <div class="news-card__post-name">Tag Body</div>-->
+      <div class="news-card__details-wrapper">
+        <!--<p class="news-card__excerpt">Tag Body&hellip;</p>-->
+        <a href="#" class="news-card__read-more">Xem Chi Tiết<i class="fas fa-long-arrow-alt-right"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="news-card">
+    <a href="#" class="news-card__card-link"></a>
+    <img src="https://scontent.fdad3-1.fna.fbcdn.net/v/t39.30808-6/330333725_588189703162703_8814877243694404177_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=01St9GI1uxAAX8Koxs8&_nc_ht=scontent.fdad3-1.fna&oh=00_AfA0XFjEuxLNYEepgsYYFDHRZijIrZ29Y4f-P2izld5kaA&oe=64799F65" alt="" class="news-card__image">
+    <div class="news-card__text-wrapper">
+      <h4 class="news-card__title">Cao đẳng Đại Việt Đà Nẵng</h4>
+     <!--  <div class="news-card__post-name">Tag Body</div>-->
+      <div class="news-card__details-wrapper">
+        <!--  <p class="news-card__excerpt">Tag Body&hellip;</p>-->
+        <a href="#" class="news-card__read-more">Xem Tất Cả<i class="fas fa-long-arrow-alt-right"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="news-card">
+    <a href="#" class="news-card__card-link"></a>
+    <img src="https://scontent.fdad3-5.fna.fbcdn.net/v/t39.30808-6/300846804_404539981768520_5874600676503867321_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=vCpXZkBXH-sAX_kdPvZ&_nc_ht=scontent.fdad3-5.fna&oh=00_AfBv6L3YhbJZgazslsGPUHOBKcXBQeOTWjhDUuYeoZfy4Q&oe=6479B14F" alt="" class="news-card__image">
+    <div class="news-card__text-wrapper">
+      <h4 class="news-card__title">Cao đẳng Đức Trí</h4>
+      <!-- <div class="news-card__post-name">Tag Body</div> -->
+      <div class="news-card__details-wrapper">
+       <!--<p class="news-card__excerpt">Tag Body&hellip;</p> -->
+        <a href="#" class="news-card__read-more">Xem Chi Tiết <i class="fas fa-long-arrow-alt-right"></i></a>
+      </div>
+    </div>
+  </div>
+
+
+</div>
+
+</div>
+</body>
+</html>

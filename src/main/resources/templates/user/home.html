@@ -1,0 +1,1216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tuyển Sinh Đại Học - Cao Đẳng Tại Đà Nẵng </title>
+    <script src="https://kit.fontawesome.com/ef7e2b893b.js" crossorigin="anonymous"></script>
+    <!-- Font Awesome -->
+<link
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+rel="stylesheet"/>
+<!-- Google Fonts -->
+<link
+href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+rel="stylesheet"/>
+<!-- MDB -->
+<link
+href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.1/mdb.min.css"
+rel="stylesheet"/>
+<!-- MDB -->
+<script
+  type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.1/mdb.min.js"></script>
+</head>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+:root {
+    --body-color: #fff;
+    --nav-color: #04368b;
+    --bg-color: #fff;
+}
+
+.dark-theme {
+    --body-color: #2d2c2c;
+    --nav-color: #2d2c2c;
+    --container: #2d2c2c;
+    --left-sidebar:#2d2c2c;
+    
+}
+
+body {
+    background: var(--body-color);
+    transition: background 0.3s;
+}
+
+nav.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--nav-color);
+    padding: 5px 5%;
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+}
+
+
+/* nav left */
+
+img.logo {
+    width: 160px;
+    margin-right: 45px;
+}
+
+.nav-left,
+.nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.nav-left ul li {
+    display: inline-block;
+    list-style: none;
+}
+
+ul.navlogo li img {
+    width: 24px;
+    margin: 0px 13px;
+}
+
+.profile-image img {
+    width: 40px;
+    border-radius: 100%;
+}
+
+
+/* nav right */
+
+
+.search-box {
+    display: flex;
+    background: var(--body-color);
+    border-radius: 20px;
+    align-items: center;
+    padding: 0px 15px;
+}
+
+.search-box img {
+    width: 16px;
+}
+
+.search-box input {
+    width: 240px;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 8px;
+}
+
+.profile-image {
+    margin: 7px 0px 0px 18px;
+    cursor: pointer;
+}
+
+.online {
+    position: relative;
+}
+
+.online::after {
+    content: '';
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    border: 2px solid var(--bg-color);
+    top: 0px;
+    right: 0px;
+    border-radius: 100%;
+    background: #41db51
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 13px 5%;
+}
+
+/* content-area */
+
+.left-sidebar {
+    flex-basis: 25%;
+    position: sticky;
+    top: 70px;
+    align-self: flex-start;
+}
+
+.right-sidebar {
+    flex-basis: 25%;
+    position: sticky;
+    top: 70px;
+    align-self: flex-start;
+    background: var(--bg-color);
+    border-radius: 4px;
+    padding: 20px;
+    color: #626262;
+}
+
+.content-area {
+    flex-basis: 47%;
+    position: sticky;
+    top: 70px;
+    align-self: flex-start;
+}
+
+.important-links a,
+.shortcut-links a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    margin-bottom: 30px;
+    color: #626262;
+    width: fit-content;
+}
+
+.important-links a img {
+    width: 25px;
+    margin-right: 15px;
+}
+
+.important-links a:last-child {
+    color: #04368b;
+}
+
+.important-links {
+    border-bottom: 1px solid #ccc;
+}
+
+.shortcut-links a img {
+    width: 40px;
+    margin-right: 15px;
+    border-radius: 4px;
+}
+
+.shortcut-links p {
+    margin: 25px 0px;
+    color: #626262;
+    font-weight: 500;
+}
+
+.heading-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+.right-sidebar {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.heading-link a {
+    text-decoration: none;
+    color: var(--nav-color);
+    font-size: 13px;
+}
+
+.events {
+    display: flex;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.left-event {
+    box-shadow: 0 0 10px rgb(126 126 126 / 42%);
+    margin-right: 15px;
+    height: 65px;
+    width: 65px;
+    text-align: center;
+    padding-top: 10px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.events p {
+    font-size: 12px;
+}
+
+.events a {
+    text-decoration: none;
+    color: #04368b;
+    font-size: 12px;
+}
+
+.left-event span {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+
+    background: #1876f2;
+    color: var(--bg-color);
+    font-size: 10px;
+    padding: 4px 0pc;
+}
+
+img.advertisement-image {
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+
+.online-list {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.online-list .online img {
+    width: 50px;
+    border-radius: 50%;
+}
+
+.online-list .online {
+    width: 46px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.online-list .online::after {
+    top: unset;
+    bottom: 5px;
+}
+
+.story-gallery {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.story {
+    flex-basis: 18%;
+    padding-top: 32%;
+    position: relative;
+    border-radius: 10px;
+
+}
+
+.story img {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 45px;
+    border-radius: 50%;
+    border: 5px solid var(--nav-color);
+
+}
+
+.story p {
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+    width: 100%;
+    color: #c9c9c9;
+    font-size: 18px;
+}
+
+.story.story1 {
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.5)), url(images/status-1.png) no-repeat center center /cover;
+}
+
+.story.story2 {
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.5)), url(images/status-2.png) no-repeat center center /cover;
+}
+
+.story.story3 {
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.5)), url(images/status-3.png) no-repeat center center /cover;
+}
+
+.story.story4 {
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.5)), url(images/status-4.png) no-repeat center center /cover;
+}
+
+.story.story5 {
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.5)), url(images/status-5.png) no-repeat center center /cover;
+}
+
+.story.story1 img {
+    top: unset;
+    left: 50%;
+    bottom: 40px;
+    transform: translateX(-50%);
+    border: 0;
+    width: 35px;
+}
+
+.write-post-container {
+    color: #626262;
+    background-color: var(--bg-color);
+    width: 100%;
+    padding: 20px;
+    border-radius: 6px;
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+}
+
+.user-profile img {
+    width: 45px;
+    border-radius: 50%;
+    margin-right: 10px;
+
+}
+
+.user-profile p {
+    margin-bottom: -5px;
+}
+
+.user-profile small {
+    font-size: 12px;
+}
+
+.post-upload-textarea {
+    padding: 20px 0px 0px 55px;
+}
+
+.post-upload-textarea textarea {
+    width: 100%;
+    border: 0px;
+    outline: none;
+    border-bottom: 1px solid #ccc;
+    background: transparent;
+    resize: none;
+}
+
+.add-post-links {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.add-post-links a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #626262;
+    font-size: 13px;
+}
+
+.add-post-links a img {
+    width: 20px;
+    margin-right: 13px;
+}
+
+.status-field-container {
+    margin-top: 20px;
+}
+
+.status-field img {
+    width: 100%;
+    margin-top: 15px;
+    border-radius: 6px;
+}
+
+.status-field p {
+    font-size: 14px;
+    margin: 20px 0px 5px 0px;
+    text-transform: capitalize;
+    color: #626262;
+}
+
+.status-field p a {
+    color: var(--nav-color);
+}
+
+.activity-icons div {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.activity-icons div img {
+    width: 18px;
+    margin-right: 10px;
+}
+
+.post-reaction {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 10px;
+}
+
+.post-profile-picture img {
+    width: 20px;
+    border-radius: 50%;
+    margin-right: 4px;
+
+}
+
+.post-profile-picture {
+    display: flex;
+    align-items: center;
+}
+
+.user-profile-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+button.btn-LoadMore {
+    margin: 20px auto;
+    display: flex;
+    cursor: pointer;
+    padding: 5px 10px;
+    border: 1px solid #9a9a9a;
+    color: #626262;
+    background: transparent;
+    border-radius: 4px;
+}
+
+footer#footer {
+    text-align: center;
+    background: var(--nav-color);
+    color: var(--bg-color);
+    padding: 15px 0px;
+    font-size: 13px;
+}
+
+.user-settings {
+    position: absolute;
+    right: 5%;
+    background: var(--bg-color);
+    top: 110%;
+    max-width: 350px;
+    width: 90%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    border-radius: 4px;
+    overflow: hidden;
+    max-height: 0px;
+    transition: max-height 0.3s;
+}
+
+.user-setting-showup-toggle {
+    max-height: 439px;
+}
+
+.user-settings .user-profile {
+    padding: 20px;
+}
+
+.user-profile div p {
+    color: #6a6a6a;
+    font-weight: 600;
+}
+
+.user-settings .user-profile a {
+    font-size: 13px;
+    text-decoration: none;
+    color: #626262;
+}
+
+
+.user-settings hr {
+    width: 90%;
+    margin: auto;
+    background: #dbdbdb;
+    border: 0px;
+    height: 1px;
+}
+
+.settings-links {
+    display: flex;
+    align-items: center;
+    margin: 15px 20px 25px 20px;
+}
+
+.settings-links img {
+    width: 38px;
+    margin-right: 10px;
+}
+
+.settings-links a img {
+    width: 7px;
+}
+
+.settings-links a {
+    color: #626262;
+    flex: 1;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profile-darkButton {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div#dark-button {
+    background: #ccc;
+    margin-right: 20px;
+    padding: 2px 3px;
+    border-radius: 15px;
+    width: 45px;
+    cursor: pointer;
+}
+
+div#dark-button span {
+    background: var(--bg-color);
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    display: block;
+}
+
+div#dark-button.dark-mode-on {
+    background: #464545;
+    padding: 2px 22px;
+}
+
+.btn-LoadMore.loadMoreToggle {
+    background: red;
+    color: white;
+}
+
+/* --------------profile-page-------------- */
+
+img.coverImage {
+    overflow: hidden;
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+.profile-container {
+    padding: 20px 15%;
+    color: #626262;
+}
+
+.left-dashboard {
+    display: flex;
+    align-items: center;
+}
+
+.left-dashboard .dashboard-img {
+    width: 100px;
+    margin-right: 15px;
+    border-radius: 10px;
+}
+
+.dashboard {
+    padding: 15px;
+    background: var(--bg-color);
+    justify-content: space-between;
+    display: flex;
+    border-radius: 5px;
+}
+
+.mutual-friend-images img {
+    width: 25px;
+    border-radius: 50%;
+}
+
+.left-dashboard-info h3 {
+    font-size: 25px;
+}
+
+.left-dashboard-info p {
+    font-size: 13px;
+    margin-bottom: 12px;
+}
+
+.right-dashboard-info-top {
+    display: flex;
+    align-items: center;
+}
+
+.right-dashboard-info-top button,
+.right-div-single-logo {
+    padding: 5px;
+    border-radius: 5px;
+    margin-left: 8px;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.right-dashboard-info-top button:nth-child(2) {
+    background: #1876f2;
+    color: white;
+}
+
+.right-div-single-logo {
+    align-self: end;
+    font-size: 18px;
+    margin-top: 16px;
+    padding: 2px 16px;
+    background: #EFEFEF;
+}
+
+.right-dashboard-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.container.content-profile-container {
+    padding: 25px 0px;
+}
+
+.left-sidebar.profile-left-sidebar {
+    flex-basis: 32%;
+}
+
+.content-area.profile-content-area {
+    flex-basis: 65%;
+}
+
+.left-profile-sidebar-top {
+    background: var(--bg-color);
+    padding: 15px 15px 30px 15px;
+    border-radius: 5px;
+}
+
+.intro-bio h4 {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.intro-bio p {
+    font-size: 16px;
+    text-align: center;
+    margin: 5px;
+}
+
+.intro-bio i {
+    color: rgb(255, 196, 0);
+}
+
+.intro-bio hr {
+    border: 0px;
+    margin: 20px auto;
+    height: 1px;
+    background: #ccc;
+}
+
+.background-details a {
+    display: flex;
+    color: #636362;
+    text-decoration: none;
+    font-size: 15px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.background-details a i {
+    margin-right: 10px;
+}
+.left-profile-sidebar-top.gallery{
+    margin-top:18px
+}
+.gallery-photos-rowFirst {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.gallery-photos-rowFirst img {
+    width: 100%;
+    border-radius: 10px;
+}
+.gallery-photos-rowFirst div p {
+    font-size: 14px;
+}
+</style>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-left"><a style="font-size: 24px; color: white;">HOPE</a>
+            <ul class="navlogo">
+                <li><img src="/images/notification.png"></li>
+                <li><img src="/images/inbox.png"></li>
+                <!--<li><img src="images/video.png"></li>-->
+            </ul>
+        </div>
+        <div class="nav-right">
+            <div class="search-box">
+                <img src="/images/search.png" alt="">
+                <input type="text" placeholder="Tìm Kiếm">
+            </div>
+            <div class="profile-image online" onclick="UserSettingToggle()">
+                <img src="https://i.pinimg.com/736x/64/30/1c/64301c42f058143fbc4a313e05aa0bbe.jpg" alt="">
+            </div>
+
+        </div>
+        <div class="user-settings">
+            <div class="profile-darkButton">
+            <div class="user-profile">
+                <img src="https://i.pinimg.com/736x/64/30/1c/64301c42f058143fbc4a313e05aa0bbe.jpg" alt="">
+                <div>
+                    <p>Chào Mừng, <span th:text="${fullName}"></span>!</p>
+                    <a href="#"></a>
+                </div>
+            </div>
+            <div id="dark-button" onclick="darkModeON()">
+                <span></span>
+            </div>
+            </div>
+            <hr>
+            <div class="user-profile">
+                <img src="/images/feedback.png" alt="">
+                <div>
+                    <p> Give Feedback</p>
+                    <a href="#">Help us to improve</a>
+                </div>
+            </div>
+            <hr>
+            <div class="settings-links">
+                <img src="/images/setting.png" alt="" class="settings-icon">
+                <a href="#">Settings & Privary <img src="/images/arrow.png" alt=""></a>
+            </div>
+
+            <div class="settings-links">
+                <img src="images/help.png" alt="" class="settings-icon">
+                <a href="#">Help & Support <img src="/images/arrow.png" alt=""></a>
+            </div>
+
+            <div class="settings-links">
+                <img src="/images/Display.png" alt="" class="settings-icon">
+                <a href="#">Display & Accessibility <img src="/images/arrow.png" alt=""></a>
+            </div>
+
+            <div class="settings-links">
+                <img src="/images/logout.png" alt="" class="settings-icon">
+                <a href="#">Logout <img src="/images/arrow.png" alt=""></a>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- content-area------------ -->
+
+    <div class="container">
+        <div class="left-sidebar">
+            <div class="important-links">
+                <a href="#"><i class="fas fa-newspaper" style="font-size: 24px;color: #04368b">&ensp;</i>Bản Tin</a>
+                <a href="#"><i class="fas fa-user-friends" style="font-size: 24px;color: #04368b">&ensp;</i>Bạn Bè</a>
+                <a href="#"><i class="fas fa-users" style="font-size: 24px;color: #04368b">&ensp;</i>Nhóm</a>
+                
+                <a href="#">Xem Thêm</a>
+            </div>
+
+            <div class="shortcut-links">
+                <p>Đang Theo Dõi</p>
+                <a href="/user/truongcaodangfpt"> <img src="https://inkythuatso.com/uploads/thumbnails/800/2021/12/logo-fpt-polytechnic-inkythuatso-09-13-08-21.jpg" alt="">Trường Cao Đẳng FPT</a>
+                <a href="/truongdaihocbachkhoa"> <img src="https://dut.udn.vn/Files/admin/images/Tin_tuc/Khac/2020/LogoDUT/image002.jpg" alt="">Trường Đại Học Bách Khoa-ĐHĐN</a>
+                <a href="#"> <img src="https://upload.wikimedia.org/wikipedia/commons/b/b6/Logo_tr%C6%B0%E1%BB%9Dng_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_C%C3%B4ng_ngh%E1%BB%87_th%C3%B4ng_tin_v%C3%A0_Truy%E1%BB%81n_th%C3%B4ng_Vi%E1%BB%87t_-_H%C3%A0n%2C_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_%C4%90%C3%A0_N%E1%BA%B5ng.png" alt="">Trường Đại Học CNTT & TT Việt Hàn-ĐHĐN</a>
+                <a href="#"> <img src="https://ued.udn.vn/uploads/photos/images/2021/04/logo-nha-truong/logo-2021.jpg" alt="">Trường Đại Học Sư Phạm-ĐHĐN</a>
+               
+            </div>
+        </div>
+
+        <!-- main-content------- -->
+
+        <div class="content-area">
+            <!--<div class="story-gallery">
+                <div class="story story1">
+                    <img src="images/upload.png" alt="">
+                    <p>Post Story</p>
+                </div>
+                <div class="story story2">
+                    <img src="images/member-1.png" alt="">
+                    <p>Alison</p>
+                </div>
+                <div class="story story3">
+                    <img src="images/member-2.png" alt="">
+                    <p>Jackson</p>
+                </div>
+                <div class="story story4">
+                    <img src="images/member-3.png" alt="">
+                    <p>Samona</p>
+                </div>
+                <div class="story story5">
+                    <img src="images/member-4.png" alt="">
+                    <p>John</p>
+                </div>
+            </div>-->
+
+            
+            <div class="status-field-container write-post-container">
+                <div class="user-profile-box">
+                    <div class="user-profile">
+                        <img src="https://scontent.fdad1-3.fna.fbcdn.net/v/t39.30808-6/307016476_617796436536611_7110707510230072284_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=h332Ek6u7sIAX-e1DsZ&_nc_ht=scontent.fdad1-3.fna&oh=00_AfBFjDOy1zySMp2YrOY9cZr4LGtVicoq4zANeJ3PAmvrNA&oe=6487578F" alt="">
+                        <div>
+                            <p>Trường Đại Học Công Nghệ Thông Tin Và Truyền Thông Việt Hàn</p>
+                            <small>Thứ Sáu - 09/06/1023 22:10</small>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                    </div>
+                </div>
+                <div class="status-field">
+                    <p>️🔥🔥🔥HOT HOT HOT🔥🔥🔥<br>
+                        🎉️🎉️🎉CHÚC MỪNG 55 ĐỘI THI BWD 2023 ĐÃ XUẤT SẮC VƯỢT QUA VÒNG LOẠI 1 CUỘC THI BEST WEB DESIGN 2023🎉️🎉️🎉
+                        <br>-------------------------------------<br>
+                        📍Vừa qua ngày 3/6/2023 với sự đón nhận gần 400 website của gần 1000 sinh viên năm nhất trường VKU, vòng 1 cuộc thi Best Web Design 2023 đã diễn ra thành công tốt đẹp.
+📍Trải qua gần một ngày để chấm điểm các sản phẩm dự thi từ các đội, Hội đồng Giám khảo - những người cầm cân nảy mực đã rất khó khăn khi đưa ra những quyết định, lựa chọn bởi vì các sản phẩm dự thi đều rất xuất sắc và nổi bật.
+Thế nhưng, cuộc thi nào cũng phải có những đội đi tiếp và ở lại. Vì thế, dù bị loại nhưng sản phẩm của các bạn đã làm rất tốt trong cuộc thi lần này rồi, chúc mừng các bạn.
+🏵️Xin chúc mừng 55 đội đã mang đến những sản phẩm xuất sắc và vô cùng nổi bật đã vượt qua vòng 1 của cuộc thi Best Web Design 2023 (Danh sách đính kèm link bên dưới)
+⚠️Xin chúc mừng các đội vào vòng tiếp theo và hãy cùng các đồng đội của mình chuẩn bị thật tốt để trở lại cho chặng đường mới nhé!!!
+<br>-------------------------------------<br>
+🔗Danh sách 55 đội thi vượt qua vòng 1: 
+                <a href="https://bit.ly/BWD_2023_KQ_SL1">https://bit.ly/BWD_2023_KQ_SL1</a><br>
+⏰Dự kiến Vòng 2: 8h00 Thứ 7, ngày 24 tháng 6 năm 2023<br>
+ 📣Hình thức: Offline, danh sách hội đồng thi sẽ sớm cập nhật và thông báo về cho các đội thi.
+ <br>-------------------------------------<br>
+ 📬 Mọi chi tiết xin vui lòng liên hệ với Ban tổ chức theo địa chỉ: <br>
+     🏣Khoa Khoa học máy tính, trường Đại học Công nghệ Thông tin và Truyền thông Việt – Hàn, Đại học Đà Nẵng<br>
+     📍Phòng V.B104, Khu đô thị Đại học Đà Nẵng, phường Hòa Quý, quận Ngũ Hành Sơn, Đà Nẵng.<br>
+                      <a href="#">#bwd2023</a>
+                    
+                    </p>
+                    <img src="https://scontent.fdad2-1.fna.fbcdn.net/v/t39.30808-6/352136049_917727462645311_5338278218889212205_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=730e14&_nc_ohc=XV15SJNx7dsAX-iN9j6&_nc_ht=scontent.fdad2-1.fna&oh=00_AfCIrV65fXWohqtCZqt0xMBI8UA7YPwaedX9Q3SucPqb9Q&oe=6487721F" alt="">
+
+                </div>
+                <div class="post-reaction">
+                    <div class="activity-icons">
+                        <div><img src="/images/like-blue.png" alt="">120</div>
+                        <div><img src="/images/comments.png" alt="">52</div>
+                        <div><img src="/images/share.png" alt="">35</div>
+                    </div>
+                    <div class="post-profile-picture">
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="status-field-container write-post-container">
+                <div class="user-profile-box">
+                    <div class="user-profile">
+                        <img src="https://upload.wikimedia.org/wikipedia/vi/thumb/3/3a/Tr%C6%B0%E1%BB%9Dng_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_Ngo%E1%BA%A1i_ng%E1%BB%AF%2C_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_%C4%90%C3%A0_N%E1%BA%B5ng.svg/1200px-Tr%C6%B0%E1%BB%9Dng_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_Ngo%E1%BA%A1i_ng%E1%BB%AF%2C_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_%C4%90%C3%A0_N%E1%BA%B5ng.svg.png" alt="">
+                        <div>
+                            <p>Trường Đại Học Ngoại Ngữ Đà Nẵng</p>
+                            <small>Thứ Sáu - 26/05/2023 10:06</small>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                    </div>
+                </div>
+                <div class="status-field">
+                    <p>Cuộc thi hùng biện Ngoại ngữ dành cho học sinh THPT Thành phố Đà Nẵng năm 2023<a
+                            href="#">#This_Post_is_Bigger!!!!</a> </p>
+<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" frameborder="0" height="360" src="https://www.youtube.com/embed/Tr8VU1kkCEs" width="640"></iframe>                    
+
+                </div>
+                <div class="post-reaction">
+                    <div class="activity-icons">
+                        <div><img src="/images/like-blue.png" alt="">120</div>
+                        <div><img src="/images/comments.png" alt="">52</div>
+                        <div><img src="/images/share.png" alt="">35</div>
+                    </div>
+                    <div class="post-profile-picture">
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="status-field-container write-post-container">
+                <div class="user-profile-box">
+                    <div class="user-profile">
+                        <img src="https://ued.udn.vn/uploads/photos/images/2021/04/logo-nha-truong/logo-2021.jpg" alt="">
+                        <div>
+                            <p>Trường Đại Học Sư Phạm Đà Nẵng</p>
+                            <small>Thứ năm - 18/05/2023 10:06</small>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                    </div>
+                </div>
+                <div class="status-field">
+                    <p>🌏🌏🌏Thực tế ngôn ngữ và văn hóa cho LHS học Chương trình tiếng Việt dành cho người nước ngoài tại Trường Đại học Sư phạm – ĐHĐN🌏🌏🌏<br>
+        Ngày 17.5, Nhằm mục đích trau dồi kỹ năng sử dụng tiếng Việt được học tập tại trường, đồng thời trải nghiệm thực tế để Lưu học sinh Lào hiểu thêm về văn hóa, đất nước, con người Việt Nam, Trường Đại học Sư phạm – Đại học Đà Nẵng (ĐHĐN) đã tổ chức thực tế ngôn ngữ và văn hóa cho các LHS đang theo học Chương trình tiếng Việt dành cho người nước ngoài.<br>
+        Trong chuyến tham quan, các LHS đã được thăm quan hoạt động trải nghiệm tại Làng rau Trà Quế - Một trong những địa điểm du lịch Hội An thú vị, cơ hội trải nghiệm công việc của một nông dân đích thực, nơi hiện tại vẫn còn duy trì phương pháp trồng rau hữu cơ từ xa xưa.<br>
+        Tại Làng gốm Thanh Hà, LHS đã lạc vào một miền quê yên bình, mải mê ngắm nhìn những tác phẩm nghệ thuật được thổi hồn bởi người nghệ nhân tài hoa, khám phá lịch sử lâu đời của Làng và trải nghiệm quy trình làm gốm tại đây.<br>
+        Cùng ngày, đoàn thực tế đã được tham quan Quần thể thắng cảnh Ngũ Hành Sơn - tuyệt tác về cảnh quan thiên nhiên mà tạo hóa ban tặng cho vùng đất Đà Nẵng. Có vẻ đẹp hài hòa của vùng sinh thái tự nhiên đan xen cùng với đời sống văn hóa tâm linh; Bảo tàng điêu khắc Chăm Đà nẵng - nơi bảo tồn và phát huy giá trị di sản văn hóa về thời kỳ hưng thịnh của Vương quốc Chăm Pa cổ xưa.<br>
+        Ngoài việc tìm hiểu các giá trị văn hóa truyền thống, các LHS được trực tiếp giao lưu với người dân địa phương bằng tiếng Việt một cách tự tin, trôi chảy. Thể hiện chương trình giáo dục tiếng Việt cho sinh viên nước ngoài tại các Trường Đại học Sư phạm - ĐHĐN có chất lượng tốt, sát thực tiễn, đảm bảo cho LHS sẽ học tốt các chuyên ngành các em lựa chọn.<br>
+        Chuyến tham quan, học tập thực tế đã đem lại sự phấn khởi của các LHS. Kết quả thu được qua hoạt động học tập, trải nghiệm thực tế giúp LHS đang học tập tại Nhà trường có cơ hội tìm hiểu về lịch sử, phong tục tập quán, văn hóa của con người Quảng Nam – Đà Nẵng. Đồng thời động viên, khuyến khích tinh thần học tập của các LHS đang học tập tại Nhà trường ra sức phấn đấu học tập và rèn luyện để đạt kết quả tốt hơn trong thời gian tới.<br>
+                                                                               --------------------------------------<br>
+TRƯỜNG ĐẠI HỌC SƯ PHẠM, ĐHĐN (UED)<br>
+🌎 Website: http://tuyensinh.ued.udn.vn <br>
+💎 Fanpage: Trường Đại học Sư phạm - Đại học Đà Nẵng.<br>
+📧 Email: tuyensinh@ued.udn.vn<br>
+☎️ Điện thoại: 0898 204 204<br>
+🏠 Địa chỉ: 459 Tôn Đức Thắng, Hòa Khánh Nam, Liên Chiểu, Đà Nẵng<a></a> </p>
+                    <img src="https://scontent.fdad1-4.fna.fbcdn.net/v/t39.30808-6/347786777_199922676241922_7184282295442861447_n.jpg?stp=dst-jpg_p600x600&_nc_cat=105&ccb=1-7&_nc_sid=730e14&_nc_ohc=3kT2YgNTiDYAX_kAq39&_nc_ht=scontent.fdad1-4.fna&oh=00_AfAGyO56NZWXtkbg-IMDdwK44-Ws2VFOv3ywaLecn1rp2A&oe=648DBB8E" alt="">
+
+                </div>
+                <div class="post-reaction">
+                    <div class="activity-icons">
+                        <div><img src="/images/like-blue.png" alt="">120</div>
+                        <div><img src="/images/comments.png" alt="">52</div>
+                        <div><img src="/images/share.png" alt="">35</div>
+                    </div>
+                    <div class="post-profile-picture">
+                       
+                    </div>
+                </div>
+            </div>
+            <div class="status-field-container write-post-container">
+                <div class="user-profile-box">
+                    <div class="user-profile">
+                        <img src="https://upload.wikimedia.org/wikipedia/vi/thumb/f/f4/Logo_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_%C4%90%C3%A0_N%E1%BA%B5ng.svg/768px-Logo_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_%C4%90%C3%A0_N%E1%BA%B5ng.svg.png?20230315073827" alt="">
+                        <div>
+                            <p>Đại Học Đà Nẵng</p>
+                            <small>Thứ năm - 19/05/2023 18:00</small>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                    </div>
+                </div>
+                <div class="status-field">
+                    <p>Đợt thi 2 (5/4-28/5/2023): Đối với đợt thi thứ 2, thí sinh sẽ đăng ký dự thi từ ngày 5 đến 28-4-2023, thi vào ngày 28-5-2023. Kết quả sẽ được công bố vào ngày 6-6. <a
+                            href="#"></a> </p>
+                    <img src="https://butbi.hocmai.vn/wp-content/uploads/2022/06/dang-ky-thi-danh-gia-nang-luc-2023-tphcm-1a.jpg" alt="">
+
+                </div>
+                <div class="post-reaction">
+                    <div class="activity-icons">
+                        <div><img src="/images/like-blue.png" alt="">120</div>
+                        <div><img src="/images/comments.png" alt="">52</div>
+                        <div><img src="/images/share.png" alt="">35</div>
+                    </div>
+                    <div class="post-profile-picture">
+                       
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="btn-LoadMore" onclick="LoadMoreToggle()">Load More</button>
+        </div>
+
+        <!-- sidebar------------ -->
+        <div class="right-sidebar">
+            <div class="heading-link">
+                <h4>Sự Kiện</h4>
+                <a href="">Xem Tất Cả</a>
+            </div>
+
+            <div class="events">
+                <div class="left-event">
+                    <h4>28</h4>
+                    <span>Tháng 5</span>
+                </div>
+                <div class="right-event">
+                    <h4>Thi ĐGNL</h4>
+                    <p> <i class="fas fa-map-marker-alt"></i>Trường Đại Học CNTT & TT Việt Hàn</p>
+                    <a href="#">Xem Chi Tiết</a>
+                </div>
+            </div>
+            <div class="events">
+                <div class="left-event">
+                    <h4>10</h4>
+                    <span>Tháng 6</span>
+                </div>
+                <div class="right-event">
+                    <h4>Giải Đấu Bóng Bàn ĐHBK</h4>
+                    <p><i class="fas fa-map-marker-alt"></i>Trường Đại Học Bách Khoa Đà Nẵng</p>
+                    <a href="#">Xem Chi Tiết</a>
+                </div>
+            </div>
+
+            <!-- <div class="heading-link">
+                <h4>Advertisement</h4>
+                <a href="">Close</a>
+            </div>
+            <div class="advertisement">
+                <img src="/images/advertisement.png" class="advertisement-image" alt="">
+            </div> -->
+
+            <div class="heading-link">
+                <h4>Đang Hoạt Động</h4>
+                <!-- <a href="">Hide Chat</a> -->
+            </div>
+
+            <div class="online-list">
+                <div class="online">
+                    <img src="https://dut.udn.vn/Files/admin/images/Tin_tuc/Khac/2020/LogoDUT/image002.jpg" alt="">
+                </div>
+                <p>Trường Đại Học Bách Khoa Đà Nẵng</p>
+            </div>
+
+            <div class="online-list">
+                <div class="online">
+                    <img src="https://scontent.fdad1-3.fna.fbcdn.net/v/t39.30808-6/307016476_617796436536611_7110707510230072284_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=h332Ek6u7sIAX-e1DsZ&_nc_ht=scontent.fdad1-3.fna&oh=00_AfBFjDOy1zySMp2YrOY9cZr4LGtVicoq4zANeJ3PAmvrNA&oe=6487578F" alt="">
+                </div>
+                <p>Trường Đại Học CNTT & TT Việt Hàn</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="https://ued.udn.vn/uploads/photos/images/2021/04/logo-nha-truong/logo-2021.jpg" alt="">
+                </div>
+                <p>Trường Đại Học<br> Sư Phạm Đà Nẵng</p>
+            </div>
+        </div>
+    </div>
+    <footer class="text-center text-lg-start bg-light text-muted">
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+          <!-- Left -->
+          
+          <!-- Left -->
+      
+          <!-- Right -->
+          <div>
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <!--<a href="" class="me-4 text-reset">
+              <i class="fab fa-twitter"></i>
+            </a>-->
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-google"></i>
+            </a>
+            <!--<a href="" class="me-4 text-reset">
+              <i class="fab fa-instagram"></i>
+            </a> 
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-github"></i>
+            </a>-->
+          </div>
+          <!-- Right -->
+        </section>
+        <!-- Section: Social media -->
+      
+        <!-- Section: Links  -->
+        <section class="">
+          <div class="container text-center text-md-start mt-5">
+            <!-- Grid row -->
+            <div class="row mt-3">
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                <!-- Content -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                  <i class="fas fa-user-graduate"></i>STAR OF HOPE
+                </h6>
+                <p>
+                  &ldquo;Hãy cùng chúng tôi khám phá, nắm bắt và định hình tương lai của bạn. Đăng ký ngay để trở thành một phần của cộng đồng học thuật đầy năng lượng và sáng tạo. Chúng tôi mong muốn được hỗ trợ bạn trên hành trình tuyển sinh và chúc bạn thành công trong cuộc sống học tập sắp tới.&rdquo;
+                </p>
+              </div>
+              <!-- Grid column -->
+      
+              <!-- Grid column -->
+              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                  Tổng Quan
+                </h6>
+                <p>
+                  <a href="#!" class="text-reset">Giới Thiệu</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">Công Lập</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">Tư Thục</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">Cao Đẳng</a>
+                </p>
+              </div>
+              <!-- Grid column -->
+      
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                  Nội Dung
+                </h6>
+                <p>
+                  <a href="#!" class="text-reset">Tin Tuyển Sinh</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">Tìm Kiếm</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">Sự Kiện</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">Đăng Nhập</a>
+                </p>
+              </div>
+              <!-- Grid column -->
+      
+              <!-- Grid column -->
+              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">Liên Hệ</h6>
+                <p><i class="fas fa-map-marked-alt"></i> 430,Đường Trần Đại Nghĩa,<br>&emsp;&nbsp;Hòa Quý,Ngũ Hành Sơn,TP.Đà Nẵng</p>
+                <p>
+                  <i class="fas fa-envelope me-3"></i>
+                  Nhatdc.22it@vku.udn.vn
+                </p>
+                <p><i class="fas fa-phone me-3"></i> 0972 &nbsp;087 &nbsp;664</p>
+                <p><i class="fas fa-print me-3"></i> 0816 &nbsp;162 &nbsp;806</p>
+              </div>
+              <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+          </div>
+        </section>
+        <!-- Section: Links  -->
+      
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+          © 2023 Bản Quyền Thuộc Về:
+          <a class="text-reset fw-bold" href="https://mdbootstrap.com/">STAR OF HOPE</a>
+        </div>
+        
+        <!-- Copyright -->
+      </footer>
+      <!-- Footer -->      
+    <script src="function.js"></script>
+
+    <script>
+    var userSettings = document.querySelector(".user-settings");
+    var darkBtn = document.getElementById("dark-button");
+    var LoadMoreBackground =document.querySelector(".btn-LoadMore");
+    function UserSettingToggle(){
+        userSettings.classList.toggle("user-setting-showup-toggle");
+    }
+    // darkBtn.onclick = function(){
+//         darkBtn.classList.toggle("dark-mode-on");
+    // }
+
+    function darkModeON(){
+        darkBtn.classList.toggle("dark-mode-on");
+       document.body.classList.toggle("dark-theme");
+    };
+
+    function LoadMoreToggle(){
+        LoadMoreBackground.classList.toggle("loadMoreToggle");
+    };
+    </script>
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" xmnls:th="http://www.thymeleaf.org" 
+th:replace="layouts/main-layout::layout(~{::div})">
+<head>
+
+</head>
+<body>
+
+<div class='container'>
+<br>
+<br>
+<br>
+<br>
+<br>
+    <form class='autocomplete-container'>
+      <div
+        class='autocomplete'
+        role='combobox'
+        aria-expanded='false'
+        aria-owns='autocomplete-results'
+        aria-haspopup='listbox'
+      >
+        <input
+          class='autocomplete-input'
+          placeholder='Tìm Kiếm Trường (VD:Bạn Muốn Tìm Trường Đại Học A Thì Nhập:Trường Đại Học A ghi hoa chữ cái đầu! )'
+          aria-label='Search for a fruit or vegetable'
+          aria-autocomplete='both'
+          aria-controls='autocomplete-results'
+        >
+        <button type='submit' class='autocomplete-submit' aria-label='Search'>
+          <svg aria-hidden='true' viewBox='0 0 24 24'>
+            <path d='M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z' />
+          </svg>
+        </button>
+      </div>
+      <ul
+        id='autocomplete-results'
+        class='autocomplete-results hidden'
+        role='listbox'
+        aria-label='Search for a fruit or vegetable'
+      >
+      </ul>
+    </form>
+    <p class='search-result'></p>
+  
+</main>
+<!-- trường tư -->
+<center><h1>Danh Sách Các Trường Đại Học Tư Thục Tại Đà Nẵng</h1></center>
+<center><hr  width="30%" align="center" /></center>
+<div class="content-wrapper">
+  
+  <div class="news-card">
+    <a href="#" class="news-card__card-link"></a>
+    <img src="https://cdn.duytan.edu.vn/upload/images/25-10-2017-15-17-40-30.jpg" alt="" class="news-card__image">
+    <div class="news-card__text-wrapper">
+      <h4 class="news-card__title">Trường ĐH Duy Tân</h4>
+      <!--<div class="news-card__post-name">Tag Body</div>-->
+      <div class="news-card__details-wrapper">
+        <!--<p class="news-card__excerpt">Tag Body&hellip;</p>  -->
+        <a href="#" class="news-card__read-more">Xem Chi Tiết <i class="fas fa-long-arrow-alt-right"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="news-card">
+    <a href="#" class="news-card__card-link"></a>
+    <img src="https://scontent.fdad3-6.fna.fbcdn.net/v/t39.30808-6/299798392_487835970016505_5565296553185049378_n.png?_nc_cat=109&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=9h-xdr7D0UQAX8VIGx8&_nc_ht=scontent.fdad3-6.fna&oh=00_AfBix-Svv22TuOOmhAJxHj0KXTP-Vz7nuGy0iDb_IyYOQQ&oe=647A8134" alt="" class="news-card__image">
+    <div class="news-card__text-wrapper">
+      <h4 class="news-card__title">Trường ĐH Đông Á</h4>
+      <!--  <div class="news-card__post-name">Tag Body</div>-->
+      <div class="news-card__details-wrapper">
+        <!--  <p class="news-card__excerpt">Tag Body&hellip;</p>-->
+        <a href="#" class="news-card__read-more">Xem Chi Tiết<i class="fas fa-long-arrow-alt-right"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="news-card">
+    <a href="#" class="news-card__card-link"></a>
+    <img src="https://scontent.fdad3-4.fna.fbcdn.net/v/t1.6435-9/58796882_333538490639616_2041149783988502528_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=174925&_nc_ohc=6VynDBYPrN0AX_Px44r&_nc_ht=scontent.fdad3-4.fna&oh=00_AfB0ZD-SW2tCBClOPy7Yv2r6rNvb7XOkKZDYj5lthBwilA&oe=649C5E15" alt="" class="news-card__image">
+    <div class="news-card__text-wrapper">
+      <h4 class="news-card__title">Trường ĐH Kiến Trúc Đà Nẵng</h4>
+      <!-- <div class="news-card__post-name">Tag Body</div> -->
+      <div class="news-card__details-wrapper">
+        <!-- <p class="news-card__excerpt">Tag Body&hellip;</p> -->
+        <a href="#" class="news-card__read-more">Xem Chi Tiết<i class="fas fa-long-arrow-alt-right"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="news-card">
+    <a href="#" class="news-card__card-link"></a>
+    <img src="https://scontent.fdad3-1.fna.fbcdn.net/v/t39.30808-6/305222203_484688477000135_1918951310502046685_n.png?_nc_cat=110&ccb=1-7&_nc_sid=09cbfe&_nc_aid=0&_nc_ohc=cKeqn6CWZ6QAX83jtms&_nc_ht=scontent.fdad3-1.fna&oh=00_AfAXmg90ao2fe65KTuqCXm1k-PsX8o6oZRwHONqg7JGXBw&oe=64799A76" alt="" class="news-card__image">
+    <div class="news-card__text-wrapper">
+      <h4 class="news-card__title">Trường Đại Học Mỹ Tại Việt Nam</h4>
+      <!-- <div class="news-card__post-name">Tag Body</div> -->
+      <div class="news-card__details-wrapper">
+       <!--<p class="news-card__excerpt">Tag Body&hellip;</p> -->
+        <a href="#" class="news-card__read-more">Xem Chi Tiết <i class="fas fa-long-arrow-alt-right"></i></a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="news-card"></div>
+  <div class="news-card"></div>
+  
+</div>
+
+<br><br>
+<!-- trường tư -->
+<center><h1>Danh Sách Các Phân Hiệu Đại Học Ở Đà Nẵng</h1></center>
+<center><hr  width="30%" align="center" /></center>
+<div class="content-wrapper">
+  
+  <div class="news-card">
+   
+  </div>
+
+  <div class="news-card">
+    <a href="#" class="news-card__card-link"></a>
+    <img src="https://edu.hoteljob.vn/uploads/images/20-07-16-11/0ff34c8e8581ef7b5ee4d5caedf9bf7a.png" alt="" class="news-card__image">
+    <div class="news-card__text-wrapper">
+      <h4 class="news-card__title">Phân Hiệu ĐH FPT Đà Nẵng</h4>
+      <!--  <div class="news-card__post-name">Tag Body</div>-->
+      <div class="news-card__details-wrapper">
+        <!--  <p class="news-card__excerpt">Tag Body&hellip;</p>-->
+        <a href="#" class="news-card__read-more">Xem Chi Tiết<i class="fas fa-long-arrow-alt-right"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="news-card">
+   
+  </div>
+
+  
+
+<br><br>
+</div>
+</body>
+</html>
