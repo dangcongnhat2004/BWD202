@@ -1603,6 +1603,9 @@ h5 {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-
-
+.trinh {
+    background-color: #1981da;
+    color: aliceblue;
+    display: flex;
+}
 

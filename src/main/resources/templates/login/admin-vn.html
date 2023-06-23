@@ -207,33 +207,35 @@ a:hover{
 <body>
     <div class="container">
         <div class="login-content">
-            <form action="/admin" method="post">
-            <div th:if="${param.error}" class="alert alert-danger">
-							Invalid username & Password</div>
+     <form method="post" action="/login-admin-vn">
+  <div th:if="${param.error}" class="alert alert-danger">
+    Invalid username & Password
+  </div>
 
-						<div th:if="${param.logout}" class="alert alert-success">
-							Logout Sucessfully</div>
-          <h2 class="title">Admin</h2>
-          <div class="input-div one">
-            <div class="i">
-              <i class="fas fa-user"></i>
-            </div>
-            <div class="div">
-              <h5>Tên Tài Khoản</h5>
-              <input type="text" class="input">
-            </div>
-          </div>
-          <div class="input-div pass">
-            <div class="i"> 
-              <i class="fas fa-lock"></i>
-            </div>
-            <div class="div">
-              <h5>Mật Khẩu</h5>
-              <input type="password" class="input">
-            </div>
-          </div>
-          <input type="submit" class="btn" value="Login">
-        </form>
+  <div th:if="${param.logout}" class="alert alert-success">
+    Logout Sucessfully
+  </div>
+  <h2 class="title">Admin</h2>
+  <div class="input-div one">
+    <div class="i">
+      <i class="fas fa-user"></i>
+    </div>
+    <div class="div">
+      <h5>Tên Tài Khoản</h5>
+      <input type="text" class="input" name="username"> <!-- đặt tên cho input field tài khoản -->
+    </div>
+  </div>
+  <div class="input-div pass">
+    <div class="i">
+      <i class="fas fa-lock"></i>
+    </div>
+    <div class="div">
+      <h5>Mật Khẩu</h5>
+      <input type="password" class="input" name="password"> <!-- đặt tên cho input field mật khẩu -->
+    </div>
+  </div>
+  <input type="submit" class="btn" value="Login">
+</form>
       </div>
     </div>
 </body>

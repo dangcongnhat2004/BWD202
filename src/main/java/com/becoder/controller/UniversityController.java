@@ -7,68 +7,73 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
-import com.becoder.model.Admin;
 import com.becoder.model.University;
-import com.becoder.repository.AdminReponsitory;
+import com.becoder.repository.UniversityRepository;
 
 @Controller
-public class AdminController {
+public class UniversityController {
+    
+   
     @Autowired
-    private AdminReponsitory adminRepository;
+    private UniversityRepository universityRepository;
 
-    @GetMapping("/admin-register")
-    public String showRegistrationForm(Model model) {
-        model.addAttribute("admin", new Admin());
-        return "admin/register";
+    @PostMapping("/dangki-university")
+    public String registeruniversity(@ModelAttribute("university") University university) {
+        universityRepository.save(university);
+        return "redirect:/login-university-vn";
     }
-
-    @PostMapping("/admin-register")
-    public String registerAdmin(@ModelAttribute("admin") Admin admin) {
-        adminRepository.save(admin);
-        return "redirect:/login-admin-vn";
+    @GetMapping("/dangki-university")
+    public String showRegistrationForm(Model model) {
+        model.addAttribute("university", new University());
+        return "university/register";
     }
     
-    @GetMapping("/mainpage-admin")
-    public String mainpageadmin(@RequestParam("username") String username, Model model) {
+    @GetMapping("/mainpage-university")
+    public String mainPageUniversity(@RequestParam("university_id") int universityId, Model model) {
         // truy vấn cơ sở dữ liệu để lấy thông tin người dùng dựa trên universityId
-        Admin uni = adminRepository.findByUsername(username);
+        University uni = universityRepository.findByUniversityId(universityId);
 
         if (uni != null) {
             // đưa thông tin người dùng vào model để hiển thị trên trang chủ
-            model.addAttribute("username", uni);
+            model.addAttribute("university", uni);
 
             // trả về tên view để hiển thị trang chủ
-            return "admin/admin";
+            return "admin/home";
         } else {
             // nếu không tìm thấy thông tin người dùng, trả về trang lỗi
-            return "/";
+            return "login/university-vn";
         }
     }
     
     
-    @PostMapping("/login-admin-vn")
+    @PostMapping("/login-university-vn")
     public String login(@RequestParam("username") String username,
                         @RequestParam("password") String password,
+           
                         HttpSession session,
                         RedirectAttributes redirectAttributes) {
         // truy vấn cơ sở dữ liệu để lấy thông tin đăng nhập của admin
-        Admin admin = adminRepository.findByUsername(username);
+        University uni = universityRepository.findByUsername(username);
 
         // kiểm tra thông tin đăng nhập của người dùng
-        if (admin != null && admin.getPassword().equals(password)) {
+        if (uni != null && uni.getPassword().equals(password)) {
             // lưu thông tin đăng nhập của admin vào session
-        	session.setAttribute("username", admin);
-        	  // truyền ID của người đăng nhập vào URL
-            redirectAttributes.addAttribute("username",admin.getUsername());
+            session.setAttribute("university", uni);
 
-            // chuyển hướng đến trang admin
-            return "redirect:/mainpage-admin";
+         // truyền ID của người đăng nhập vào URL
+            redirectAttributes.addAttribute("university_id",uni.getUniversityId());
+
+
+            
+            // chuyển hướng đến trang chủ
+            return "redirect:/mainpage-university";
         } else {
             // nếu thông tin đăng nhập không hợp lệ, trả về trang đăng nhập với thông báo lỗi
-            return "/";
+            return "/login-university-vn";
         }
     }
 }

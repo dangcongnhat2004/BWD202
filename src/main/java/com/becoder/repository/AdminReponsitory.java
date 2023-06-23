@@ -8,5 +8,5 @@ import com.becoder.model.Admin;
 public interface AdminReponsitory extends JpaRepository<Admin, Integer> {
 
 	public Admin findByUsername(String username);
-	
+	 
 }

@@ -186,7 +186,14 @@ public class HomeController {
 	    model.addAttribute("user", new UserDtls());
 	    return "register";
 	}
-
+	@RequestMapping("/diemchuanbk")
+	public String diemchuanbk() {
+		return "diemchuan/diemchuanbk";
+	}
+	@RequestMapping("/diemchuanbk-ganday")
+	public String diemchuanbkgannhat() {
+		return "diemchuan/diemchuanbkganday";
+	}
 	@PostMapping("/createUser")
 	public String createuser(@ModelAttribute UserDtls user, HttpSession session) {
 
@@ -213,5 +220,22 @@ public class HomeController {
 	@RequestMapping("/chuong-trinh-dao-tao-cntt-bach-khoa-da-nang")
        public String ctdtcnttbkdn() {
 		return "chuongtrinhdaotao/daihocbachkhoa";
+	}
+	@RequestMapping("/admin-register")
+	public String dangnhapadmin() {
+		return "admin/register";
+	}
+	 
+	@RequestMapping("/dangki-university")
+	public String dangkidaihoc() {
+		return "university/register";
+	}
+	@RequestMapping("/mainpage-university")
+	public String mainpageuni() {
+		return "admin/home";
+	}
+	@RequestMapping("/mainpage-admin")
+	public String mainpageadmin() {
+		return "admin/admin";
 	}
 }

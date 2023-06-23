@@ -59,11 +59,5 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 	}
 
     // Cấu hình xác thực người dùng
-    @Autowired
-    public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {
-        auth.inMemoryAuthentication()
-            .withUser("admin").password("{noop}admin").roles("ADMIN")
-            .and()
-            .withUser("user").password("{noop}user").roles("USER");
-    }
+   
 }

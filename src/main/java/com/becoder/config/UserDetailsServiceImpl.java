@@ -13,9 +13,11 @@ import com.becoder.repository.UserRepository;
 public class UserDetailsServiceImpl implements UserDetailsService {
 
 	@Autowired
+	 // or "universityPasswordEncoder" depending on which one you want to use
+	
 	private UserRepository userRepo;
 
-	@Override
+	@Override	
 	public UserDetails loadUserByUsername(String email) throws UsernameNotFoundException {
 
 		UserDtls user = userRepo.findByEmail(email);
